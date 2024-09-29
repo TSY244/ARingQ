@@ -1,0 +1,5 @@
+# ninja log v6
+19	1859	7481189772198221	CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj	b76241896099ceed
+1861	2251	7481189790626185	ARingQUseMakeFile.exe	727ce28663d3f8d8
+1	1607	7480167324872897	CMakeFiles/ARingQUseMakeFile.dir/src/utils/utils.cpp.obj	3177713710a687e7
+2	484	7493192253179907	build.ninja	fd677adc4c353b6b
