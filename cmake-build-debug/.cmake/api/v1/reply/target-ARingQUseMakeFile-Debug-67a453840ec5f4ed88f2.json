@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ARingQUseMakeFile.exe"
+			"path" : "D:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe"
 		},
 		{
-			"path" : "ARingQUseMakeFile.pdb"
+			"path" : "D:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,7 +30,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -42,7 +42,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 17,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -80,8 +80,14 @@
 			},
 			"sourceIndexes" : 
 			[
-				1,
-				2
+				0,
+				2,
+				4,
+				6,
+				7,
+				9,
+				11,
+				13
 			]
 		}
 	],
@@ -105,7 +111,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "-lhello",
+				"fragment" : "-lDirectlyLoad",
 				"role" : "libraries"
 			},
 			{
@@ -125,18 +131,31 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				0
-			]
-		},
-		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
+				0,
+				2,
+				4,
+				6,
+				7,
+				9,
+				11,
+				13
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
 				1,
-				2
+				3,
+				5,
+				8,
+				10,
+				12,
+				14,
+				15
 			]
 		}
 	],
@@ -144,19 +163,90 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "include/utils.h",
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/utils/utils.cpp",
+			"path" : "include/utils.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/utils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Parameter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Parameter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Confusion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Confusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Cryptography.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Cryptography.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Launch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Launch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/File.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/File.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Core.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "plugin/directlyLoad.h",
 			"sourceGroupIndex" : 1
 		}
 	],

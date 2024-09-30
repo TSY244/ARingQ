@@ -49,15 +49,57 @@ cmake_ninja_workdir = D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/cmake-build
 
 build cmake_object_order_depends_target_ARingQUseMakeFile: phony || .
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/utils/utils.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/utils/utils.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\utils\utils.cpp.obj.d
+build CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/main.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
   OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src\utils
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/main.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\main.cpp.obj.d
+build CMakeFiles/ARingQUseMakeFile.dir/src/utils.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/utils.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\utils.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
+  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+
+build CMakeFiles/ARingQUseMakeFile.dir/src/Parameter.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Parameter.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Parameter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
+  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+
+build CMakeFiles/ARingQUseMakeFile.dir/src/Confusion.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Confusion.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Confusion.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
+  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+
+build CMakeFiles/ARingQUseMakeFile.dir/src/Cryptography.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Cryptography.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Cryptography.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
+  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+
+build CMakeFiles/ARingQUseMakeFile.dir/src/Launch.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Launch.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Launch.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
+  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+
+build CMakeFiles/ARingQUseMakeFile.dir/src/File.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/File.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\File.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
+  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+
+build CMakeFiles/ARingQUseMakeFile.dir/src/Core.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Core.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
+  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Core.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
   OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
@@ -69,16 +111,16 @@ build CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj: CXX_COMPILER__ARingQUse
 
 
 #############################################
-# Link the executable ARingQUseMakeFile.exe
+# Link the executable D:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\bin\ARingQUseMakeFile.exe
 
-build ARingQUseMakeFile.exe: CXX_EXECUTABLE_LINKER__ARingQUseMakeFile_Debug CMakeFiles/ARingQUseMakeFile.dir/src/utils/utils.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj
+build D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe: CXX_EXECUTABLE_LINKER__ARingQUseMakeFile_Debug CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/utils.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Parameter.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Confusion.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Cryptography.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Launch.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/File.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Core.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lhello  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lDirectlyLoad  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/./lib
   OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = ARingQUseMakeFile.exe
+  TARGET_FILE = D:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\bin\ARingQUseMakeFile.exe
   TARGET_IMPLIB = libARingQUseMakeFile.dll.a
   TARGET_PDB = ARingQUseMakeFile.exe.dbg
 
@@ -108,7 +150,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build ARingQUseMakeFile: phony ARingQUseMakeFile.exe
+build ARingQUseMakeFile: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe
+
+build ARingQUseMakeFile.exe: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe
 
 # =============================================================================
 # Folder targets.
@@ -118,7 +162,7 @@ build ARingQUseMakeFile: phony ARingQUseMakeFile.exe
 #############################################
 # Folder: D:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/cmake-build-debug
 
-build all: phony ARingQUseMakeFile.exe
+build all: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe
 
 # =============================================================================
 # Built-in targets

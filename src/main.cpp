@@ -1,60 +1,64 @@
 #include "../include/utils.h"
 
-#include <iostream>
-
 #define MODE 3
 
-bool test();
+#include "Core.h"
+
+using Operation = double (*)(double, double);
+double calculate(Operation op, double a, double b);
+
+const int  startMode = 4;
 
 int main(int argc, char *argv[]) {
 #if MODE == 0
     std::cout <<"DEBUG MODE" << std::endl;
+    std::cout << "Hello, World!" << std::endl;
 #elif MODE == 1
-    Euclid(10, 5);
+    double x = 10.0, y = 5.0;
+    Operation operation;
+
+    // 选择操作
+    int choice;
+    std::cout << "Choose an operation:\n"
+              << "1. Add\n"
+              << "2. Subtract\n"
+              << "3. Multiply\n"
+              << "4. Divide\n"
+              << "Enter your choice (1-4): ";
+    std::cin >> choice;
+
+
+    switch (choice) {
+        case 1:
+            operation = [](double a, double b) { return a + b; };
+            break;
+        case 2:
+            operation = [](double a, double b) { return a - b; };
+            break;
+        case 3:
+            operation = [](double a, double b) { return a * b; };
+            break;
+        case 4:
+            operation = [](double a, double b) { return a / b; };
+            break;
+        default:
+            std::cerr << "Invalid choice. Defaulting to addition." << std::endl;
+            operation = [](double a, double b) { return a + b; };
+            break;
+    }
+
+    // 执行运算并显示结果
+    double result = calculate(operation, x, y);
+    std::cout << "The result is: " << result << std::endl;
 #else
-    generateAndSortArray();
-    if (!checkParameters(argc, argv)) {
-        printHelp();
-        return 1;
-    }
-    generateAndSortArray();
-    if (strcmp(argv[1], "1") == 0) {
-        std::string filePath{};
-        filePath = argv[2];
-        if (!isFileExists(filePath)) {
-            std::cout << "File does not exist!" << std::endl;
-            return 1;
-        }
-        generateAndSortArray();
-        au9u5tDecrypt(filePath, argv[3], argv[4], argv[5]);
-    } else {
-        if (isTimeAccelerated()) {
-            if (!DisableEvent()) {
-                return -3;
-            }
-
-            std::cout << "No Find main.txt or StringTable ..." << std::endl;
-
-            std::cout << "\n";
-
-            for (int i = 1; i <= 9; ++i) {
-                generateAndSortArray();
-
-                for (int j = 1; j <= i; ++j) {
-                    generateAndSortArray();
-
-                    std::cout << j << " x " << i << " = " << (i * j);
-                    if (j < i) {
-                        generateAndSortArray();
-
-                        std::cout << "\t";
-                    }
-                }
-                std::cout << std::endl;
-            }
-        }
-    }
+    Core core=Core(startMode);
+    return core.start(argc, argv);
 #endif
     return 0;
+}
 
+
+// 使用函数指针执行运算
+double calculate(Operation op, double a, double b) {
+    return op(a, b);
 }
