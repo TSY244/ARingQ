@@ -1,17 +1,15 @@
 # ninja log v6
 399	12677	7493667968396958	CMakeFiles/ARingQ.dir/src/utils.cpp.obj	9d70935388c66cab
 1986	8079	7493667984245829	CMakeFiles/ARingQ.dir/src/File.cpp.obj	846b3b34834651f7
-1861	2251	7481189790626185	ARingQUseMakeFile.exe	727ce28663d3f8d8
 1257	9227	7493667976954793	CMakeFiles/ARingQ.dir/src/Cryptography.cpp.obj	521660a3cfc8f787
-2	853	7495435085254918	build.ninja	fd677adc4c353b6b
-615	6233	7493667970558974	CMakeFiles/ARingQ.dir/src/Parameter.cpp.obj	b9e97066025c366c
-832	6478	7493667972714816	CMakeFiles/ARingQ.dir/src/Confusion.cpp.obj	7934e98dfa3dc12b
-7	1951	7493707369990318	CMakeFiles/ARingQ.dir/src/main.cpp.obj	e4d5e190d686db58
-143	1970	7493707371352832	CMakeFiles/ARingQ.dir/src/Core.cpp.obj	d3bc363ce29f7e79
-20	1777	7493707812348177	CMakeFiles/ARingQ.dir/src/Launch.cpp.obj	8a73dc09a4d9b67f
-1778	2182	7493707829928489	D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe	bca79235ae580270
-3	650	7495435085254918	build.ninja	335e55d04642f4a7
+3	650	7495507570430883	build.ninja	335e55d04642f4a7
 4	290	7495435085809811	CMakeFiles/ARingQ.dir/src/Parameter.cpp.obj	b9e97066025c366c
-290	520	7495435088668779	D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe	849922a48d37fc98
-6	1143	7495440772359135	CMakeFiles/ARingQ.dir/src/Launch.cpp.obj	8a73dc09a4d9b67f
-1144	1396	7495440783735003	D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe	849922a48d37fc98
+43	1174	7495505156652397	CMakeFiles/ARingQ.dir/src/Core.cpp.obj	d3bc363ce29f7e79
+832	6478	7493667972714816	CMakeFiles/ARingQ.dir/src/Confusion.cpp.obj	7934e98dfa3dc12b
+5	1108	7495505156268583	CMakeFiles/ARingQ.dir/src/main.cpp.obj	e4d5e190d686db58
+5	983	7495505340189043	CMakeFiles/ARingQ.dir/src/Launch.cpp.obj	8a73dc09a4d9b67f
+4	234	7495506368127492	D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe	7ac319ce13827121
+5	1368	7495523203403185	CMakeFiles/ARingQ.dir/src/main.cpp.obj	e4d5e190d686db58
+50	1376	7495523203849263	CMakeFiles/ARingQ.dir/src/Core.cpp.obj	d3bc363ce29f7e79
+30	1398	7495523203650395	CMakeFiles/ARingQ.dir/src/Launch.cpp.obj	8a73dc09a4d9b67f
+1398	1702	7495523217332618	D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe	7ac319ce13827121

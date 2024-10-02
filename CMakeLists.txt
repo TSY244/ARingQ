@@ -26,6 +26,8 @@ add_executable(ARingQ
         include/File.h
         src/Core.cpp
         include/Core.h
-        plugin/directlyLoad.h)
+        plugin/directlyLoad.h
+        plugin/apcLoad.h)
 
-target_link_libraries(ARingQ libApcInjectLoad.dll)
+target_link_libraries(ARingQ libApcInjectLoad.dll
+                             libDirectlyLoad.dll)
