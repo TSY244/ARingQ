@@ -11,6 +11,7 @@
 
 #include "../plugin/directlyLoad.h"
 #include "../plugin/apcLoad.h"
+#include "../plugin/createThreatPoolWaitLoad.h"
 
 using startFunction = void (*)(const unsigned char *, const size_t &);
 using generateFunction = void (*)();

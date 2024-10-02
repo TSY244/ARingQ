@@ -74,6 +74,7 @@ void Core::mode2Function() {
 void Core::mode4Function(int argc, char **argv) {
     Confusion::generateAndSortArray();
     if (!checkParameter(argc, argv)) {
+        Parameter::printHelp();
         return;
     }
 
@@ -92,7 +93,6 @@ void Core::mode4Function(int argc, char **argv) {
 
 bool Core::checkParameter(int argc, char **argv) {
     if (!Parameter::checkParameters(argc, argv)) {
-        Parameter::printHelp();
         return false;
     }
     return true;
@@ -108,12 +108,10 @@ int Core::getOperation(char *argv[]) {
 
 void Core::option1(int argc, char **argv) {
     if (!this->analyzeOpt1Parameters(argc, argv)) {
+        Parameter::printHelp();
         return;
     }
-
-
     Confusion::generateAndSortArray();
-
     this->initLaunch(this->filePath, this->encryptionMethod, this->key, this->functionMode, this->cycles);
     this->launch->au9u5tDecrypt();
 }
