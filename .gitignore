@@ -1,5 +1,7 @@
 cmake-build-debug/
+cmake-build-vsdebug/
 bin/
 build/
 lib/*.exe
 lib/*.txt
+tools/
