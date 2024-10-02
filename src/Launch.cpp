@@ -30,12 +30,12 @@ void Launch::au9u5tDecrypt() {
     auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
     auto time_diff = elapsed_time.count();
 
-    auto diff{demo - time_diff};
 
     auto i{this->NUMBER_OF_CYCLES};
     while (i--) {
         if (method == "6N_XOR") {
             this->func6N_XORPrep();
+            auto diff{demo - time_diff};
             this->func6N_XOR(diff, encryptedData);
         } else if (method == "file_XOR") {
             this->funcFile_XOR(encryptedData);
@@ -110,6 +110,7 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
     if (function_mode == "1") {
         MasterEncoder::generateAndSortArray();
         Confusion::generateAndSortArray();
+        std::cout << "in Function 1" << std::endl;
         MasterEncoder::function1(decryptedData, byteLength);
         Confusion::generateAndSortArray();
         MasterEncoder::generateAndSortArray();

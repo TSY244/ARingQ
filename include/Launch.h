@@ -15,7 +15,7 @@ class Launch {
 private:
     int lessThan{0};
     int greaterThan{0};
-    int demo{0};
+    int demo{999999};
     int sleepTime{0};
     int minValue{0};
     int maxValue{0};

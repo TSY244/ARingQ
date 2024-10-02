@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(ARingQUseMakeFile)
+project(ARingQ)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -10,7 +10,7 @@ link_directories(${LINK_DIR})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
-add_executable(ARingQUseMakeFile
+add_executable(ARingQ
         src/main.cpp
         include/utils.h
         src/utils.cpp
@@ -28,4 +28,4 @@ add_executable(ARingQUseMakeFile
         include/Core.h
         plugin/directlyLoad.h)
 
-target_link_libraries(ARingQUseMakeFile libDirectlyLoad.dll)
+target_link_libraries(ARingQ libApcInjectLoad.dll)

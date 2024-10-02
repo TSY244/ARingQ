@@ -1,7 +1,8 @@
-#include "../include/utils.h"
-
 #define MODE 3
 
+#include <iostream>
+
+#include "utils.h"
 #include "Core.h"
 
 using Operation = double (*)(double, double);
@@ -52,7 +53,7 @@ int main(int argc, char *argv[]) {
     std::cout << "The result is: " << result << std::endl;
 #else
     Core core=Core(startMode);
-    return core.start(argc, argv);
+    core.start(argc, argv);
 #endif
     return 0;
 }

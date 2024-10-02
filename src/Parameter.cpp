@@ -8,13 +8,13 @@
 
 void Parameter::printHelp() {
     std::cout << "Usage: tool [opt] " << std::endl;
-    std::cout << "forexample: tool 1 [filepath] [EncryptionMethod] [Key] [function_mode]" << std::endl;
-    std::cout << "            filepath: path to the file" << std::endl;
-    std::cout << "            EncryptionMethod: 6N_XOR,file_XOR" << std::endl;
-    std::cout << "                              6N_XOR: 6-digit number XOR Key" << std::endl;
-    std::cout << "                              file_XOR: XOR Key from file" << std::endl;
-    std::cout << "            Key: 6 characters XOR Key or path to the key file" << std::endl;
-    std::cout << "            function_mode: 1 means function1" << std::endl;
+    std::cout << "for example: tool 1 [filepath] [EncryptionMethod] [Key] [function_mode]" << std::endl;
+    std::cout << "             filepath: path to the file" << std::endl;
+    std::cout << "             EncryptionMethod: 6N_XOR,file_XOR" << std::endl;
+    std::cout << "                               6N_XOR: 6-digit number XOR Key" << std::endl;
+    std::cout << "                               file_XOR: XOR Key from file" << std::endl;
+    std::cout << "             Key: 6 characters XOR Key or path to the key file" << std::endl;
+    std::cout << "             function_mode: 1 means function1" << std::endl;
 }
 
 bool Parameter::checkParameters(int argc, char **argv) {

@@ -12,7 +12,14 @@
 
 class Core {
 private:
+    const int cycles = 1000;
+private:
     int mode = 0;
+    std::string filePath{};
+    std::string encryptionMethod{};
+    std::string key{};
+    std::string functionMode{};
+
     Launch *launch{nullptr};
 private:
     void mode0Function();
@@ -33,9 +40,13 @@ private:
 
     void defaultOption(int argc, char *argv[]);
 
+    bool analyzeOpt1Parameters(int argc, char *argv[]);
+
 public:
     explicit Core(int mode) : mode(mode) {
     }
+
+    Core(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles);
 
     ~Core() = default;
 

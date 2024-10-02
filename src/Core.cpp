@@ -7,18 +7,17 @@
 
 
 int Core::start(int argc, char *argv[]) {
-    if (this->mode==0){
+    if (this->mode == 0) {
         this->mode0Function();
-    }else if(this->mode==1) {
+    } else if (this->mode == 1) {
         this->mode1Function();
-    }else if (this->mode==2){
+    } else if (this->mode == 2) {
         this->mode2Function();
-    }else if (this->mode==3){
+    } else if (this->mode == 3) {
         this->mode3Function();
-    }else if(this->mode==4){
+    } else if (this->mode == 4) {
         this->mode4Function(argc, argv);
-    }
-    else{
+    } else {
         std::cout << "Invalid mode" << std::endl;
     }
     return 0;
@@ -37,7 +36,7 @@ void Core::mode1Function() {
 }
 
 void Core::mode0Function() {
-    std::cout <<"DEBUG MODE" << std::endl;
+    std::cout << "DEBUG MODE" << std::endl;
 }
 
 void Core::mode3Function() {
@@ -74,7 +73,6 @@ void Core::mode2Function() {
 
 void Core::mode4Function(int argc, char **argv) {
     Confusion::generateAndSortArray();
-
     if (!checkParameter(argc, argv)) {
         return;
     }
@@ -109,13 +107,14 @@ int Core::getOperation(char *argv[]) {
 }
 
 void Core::option1(int argc, char **argv) {
-    std::string filePath{};
-    filePath = argv[2];
-    if (!File::isFileExists(filePath)) {
-        std::cout << "File does not exist!" << std::endl;
+    if (!this->analyzeOpt1Parameters(argc, argv)) {
         return;
     }
+
+
     Confusion::generateAndSortArray();
+
+    this->initLaunch(this->filePath, this->encryptionMethod, this->key, this->functionMode, this->cycles);
     this->launch->au9u5tDecrypt();
 }
 
@@ -144,12 +143,31 @@ void Core::defaultOption(int argc, char **argv) {
             }
             std::cout << std::endl;
         }
-    }else{
+    } else {
         Confusion::generateAndSortArray();
     }
 }
 
-void Core::initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) {
+void
+Core::initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) {
     this->launch = new Launch(filePath, method, key, function_mode);
     this->launch->setCycles(cycles);
+}
+
+Core::Core(string &filePath, string &method, string &key, string &function_mode, int cycles) {
+    this->initLaunch(filePath, method, key, function_mode, cycles);
+}
+
+bool Core::analyzeOpt1Parameters(int argc, char **argv) {
+    this->filePath = argv[2];
+    if (!File::isFileExists(this->filePath)) {
+        std::cout << "File does not exist!" << std::endl;
+        return false;
+    }
+
+    this->encryptionMethod = argv[3];
+    this->key = argv[4];
+    this->functionMode = argv[5];
+
+    return true;
 }

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: ARingQUseMakeFile
+# Project: ARingQ
 # Configurations: Debug
 # =============================================================================
 
@@ -39,97 +39,97 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/cmake-build-debug/
+cmake_ninja_workdir = D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target ARingQUseMakeFile
+# Object build statements for EXECUTABLE target ARingQ
 
 
 #############################################
-# Order-only phony target for ARingQUseMakeFile
+# Order-only phony target for ARingQ
 
-build cmake_object_order_depends_target_ARingQUseMakeFile: phony || .
+build cmake_object_order_depends_target_ARingQ: phony || .
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/main.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\main.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/main.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/main.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/utils.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/utils.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\utils.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/utils.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/utils.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\utils.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/Parameter.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Parameter.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Parameter.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/Parameter.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/Parameter.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\Parameter.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/Confusion.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Confusion.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Confusion.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/Confusion.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/Confusion.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\Confusion.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/Cryptography.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Cryptography.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Cryptography.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/Cryptography.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/Cryptography.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\Cryptography.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/Launch.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Launch.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Launch.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/Launch.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/Launch.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\Launch.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/File.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/File.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\File.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/File.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/File.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\File.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
-build CMakeFiles/ARingQUseMakeFile.dir/src/Core.cpp.obj: CXX_COMPILER__ARingQUseMakeFile_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/src/Core.cpp || cmake_object_order_depends_target_ARingQUseMakeFile
-  DEP_FILE = CMakeFiles\ARingQUseMakeFile.dir\src\Core.cpp.obj.d
+build CMakeFiles/ARingQ.dir/src/Core.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/src/Core.cpp || cmake_object_order_depends_target_ARingQ
+  DEP_FILE = CMakeFiles\ARingQ.dir\src\Core.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/include
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
-  OBJECT_FILE_DIR = CMakeFiles\ARingQUseMakeFile.dir\src
+  INCLUDES = -ID:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ARingQUseMakeFile
+# Link build statements for EXECUTABLE target ARingQ
 
 
 #############################################
-# Link the executable D:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\bin\ARingQUseMakeFile.exe
+# Link the executable D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.exe
 
-build D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe: CXX_EXECUTABLE_LINKER__ARingQUseMakeFile_Debug CMakeFiles/ARingQUseMakeFile.dir/src/main.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/utils.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Parameter.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Confusion.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Cryptography.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Launch.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/File.cpp.obj CMakeFiles/ARingQUseMakeFile.dir/src/Core.cpp.obj
+build D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe: CXX_EXECUTABLE_LINKER__ARingQ_Debug CMakeFiles/ARingQ.dir/src/main.cpp.obj CMakeFiles/ARingQ.dir/src/utils.cpp.obj CMakeFiles/ARingQ.dir/src/Parameter.cpp.obj CMakeFiles/ARingQ.dir/src/Confusion.cpp.obj CMakeFiles/ARingQ.dir/src/Cryptography.cpp.obj CMakeFiles/ARingQ.dir/src/Launch.cpp.obj CMakeFiles/ARingQ.dir/src/File.cpp.obj CMakeFiles/ARingQ.dir/src/Core.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lDirectlyLoad  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LD:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/./lib
-  OBJECT_DIR = CMakeFiles\ARingQUseMakeFile.dir
+  LINK_LIBRARIES = -lApcInjectLoad  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LD:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/./lib
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = D:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\bin\ARingQUseMakeFile.exe
-  TARGET_IMPLIB = libARingQUseMakeFile.dll.a
-  TARGET_PDB = ARingQUseMakeFile.exe.dbg
+  TARGET_FILE = D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.exe
+  TARGET_IMPLIB = libARingQ.dll.a
+  TARGET_PDB = ARingQ.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\cmake-build-debug && "D:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\cmake-build-debug && "D:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -140,7 +140,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\cmake-build-debug && "D:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt -BD:\tools\AntiVirus\CPP\ARingQUseCMake\decrypt\cmake-build-debug"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\cmake-build-debug && "D:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ -BD:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -150,9 +150,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build ARingQUseMakeFile: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe
+build ARingQ: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe
 
-build ARingQUseMakeFile.exe: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe
+build ARingQ.exe: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe
 
 # =============================================================================
 # Folder targets.
@@ -160,9 +160,9 @@ build ARingQUseMakeFile.exe: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decryp
 # =============================================================================
 
 #############################################
-# Folder: D:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/cmake-build-debug
+# Folder: D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/cmake-build-debug
 
-build all: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMakeFile.exe
+build all: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe
 
 # =============================================================================
 # Built-in targets
@@ -171,14 +171,14 @@ build all: phony D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/bin/ARingQUseMak
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake D$:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/CMakeLists.txt: phony
 
 
 #############################################

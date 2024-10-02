@@ -1,3 +1,5 @@
 cmake-build-debug/
 bin/
 build/
+lib/*.exe
+lib/*.txt

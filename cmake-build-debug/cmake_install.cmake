@@ -1,8 +1,8 @@
-# Install script for directory: D:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt
+# Install script for directory: D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ARingQUseMakeFile")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ARingQ")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/tools/AntiVirus/CPP/ARingQUseCMake/decrypt/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
