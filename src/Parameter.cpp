@@ -18,6 +18,8 @@ void Parameter::printHelp() {
     std::cout << "                            2 means function2 to use apcLoad" << std::endl;
     std::cout << "                            3 means function3 to use ThreatPoolWait" << std::endl;
     std::cout << "                            4 means function4 to use dynamicLoad" << std::endl;
+    std::cout << "                            5 means function5 to use dynamicLoadPlus" << std::endl;
+
 }
 
 bool Parameter::checkParameters(int argc, char **argv) {
