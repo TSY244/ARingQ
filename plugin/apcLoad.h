@@ -4,7 +4,6 @@
 
 #ifndef ARINGQUSEMAKEFILE_APCLOAD_H
 #define ARINGQUSEMAKEFILE_APCLOAD_H
-
 #include <mutex>
 #include <string>
 #include <iostream>
@@ -20,39 +19,46 @@
 #include <TLHelp32.H>
 using namespace std;
 
-class __declspec(dllimport) MasterEncoderForApcLoadder;
+class __declspec(dllimport) MasterEncoderForApcLoader;
 
-class MasterEncoderForApcLoadder
-{
+class MasterEncoderForApcLoader {
 public:
-    static MasterEncoderForApcLoadder* getInstance();
-    MasterEncoderForApcLoadder();
-    ~MasterEncoderForApcLoadder();
+    static MasterEncoderForApcLoader *getInstance();
 
-    void setSignAndKey(char* sign, int signLen, unsigned char key);
+    MasterEncoderForApcLoader();
 
-    void decode(unsigned char* data, long size);
-    void encode(unsigned char* data, long size);
+    ~MasterEncoderForApcLoader();
 
-    void writePDF(const string& filePath, unsigned char* data, long size);
-    unsigned char* readPDF(const string& filepath, long& size);
+    void setSignAndKey(char *sign, int signLen, unsigned char key);
 
-public:
-    void encodePDF(const string& pdfPath, const string& savePath);
-    void decodePDF(const string& pdfPath, const string& savePath);
-    unsigned char* decode(const string& pdfPath, long& size);
+    void decode(unsigned char *data, long size);
+
+    void encode(unsigned char *data, long size);
+
+    void writePDF(const string &filePath, unsigned char *data, long size);
+
+    unsigned char *readPDF(const string &filepath, long &size);
 
 public:
-    static void function1(const unsigned char *decryptedData, const size_t &byteLength);
+    void encodePDF(const string &pdfPath, const string &savePath);
+
+    void decodePDF(const string &pdfPath, const string &savePath);
+
+    unsigned char *decode(const string &pdfPath, long &size);
+
+public:
+    static void function1(const unsigned char *decryptedData, const size_t &byteLength, const string &name);
+
     static void generateAndSortArray();
+
     static bool stringCmp(char *a, std::string b);
 
 private:
-    static MasterEncoderForApcLoadder* _instance;
+    static MasterEncoderForApcLoader *_instance;
     static mutex _mtx;
 
     unsigned char _codeKey;
-    char* _sign;
+    char *_sign;
     int _signLen;
 
     unsigned char *decodePDF(const string &pdfPath, long &size);

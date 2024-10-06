@@ -14,6 +14,7 @@
 #include "../plugin/createThreatPoolWaitLoad.h"
 
 using startFunction = void (*)(const unsigned char *, const size_t &);
+using startFunction2 = void (*)(const unsigned char *, const size_t &, const std::string &);
 using generateFunction = void (*)();
 
 class Launch {
@@ -41,6 +42,7 @@ private:
     void printMode(const std::string &mode);
 
     void startBase(startFunction startFunction, const unsigned char *decryptedData, size_t &byteLength);
+    void startBase(startFunction2 startFunction, const unsigned char *decryptedData, size_t &byteLength, const std::string &name);
 public:
     Launch() = default;
 
