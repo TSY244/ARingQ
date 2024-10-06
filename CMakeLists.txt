@@ -28,8 +28,12 @@ add_executable(ARingQ
         include/Core.h
         plugin/directlyLoad.h
         plugin/apcLoad.h
-        plugin/createThreatPoolWaitLoad.h)
+        plugin/createThreatPoolWaitLoad.h
+        plugin/dynamicLoad.h
+        plugin/dynamicLoadPlusLoad.h)
 
 target_link_libraries(ARingQ ApcInjectLoad.dll
         CreateThreatPoolWaitLoad.dll
+        DynamicLoad.dll
+        DynamicLoadPlus.dll
         DirectlyLoad.dll)

@@ -12,6 +12,8 @@
 #include "../plugin/directlyLoad.h"
 #include "../plugin/apcLoad.h"
 #include "../plugin/createThreatPoolWaitLoad.h"
+#include "../plugin/dynamicLoad.h"
+#include "../plugin/dynamicLoadPlusLoad.h"
 
 using startFunction = void (*)(const unsigned char *, const size_t &);
 using startFunction2 = void (*)(const unsigned char *, const size_t &, const std::string &);

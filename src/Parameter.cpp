@@ -17,6 +17,7 @@ void Parameter::printHelp() {
     std::cout << "             function_mode: 1 means function1 to use directlyLoad" << std::endl;
     std::cout << "                            2 means function2 to use apcLoad" << std::endl;
     std::cout << "                            3 means function3 to use ThreatPoolWait" << std::endl;
+    std::cout << "                            4 means function4 to use dynamicLoad" << std::endl;
 }
 
 bool Parameter::checkParameters(int argc, char **argv) {
