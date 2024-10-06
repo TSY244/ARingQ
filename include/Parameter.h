@@ -62,6 +62,9 @@ namespace Parameter {
                 case 4:
                 case 5:
                 case 6:
+                case 7:
+                case 8:
+                case 9:
                     break;
                 default:
                     return false;

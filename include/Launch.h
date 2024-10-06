@@ -15,6 +15,9 @@
 #include "../plugin/dynamicLoad.h"
 #include "../plugin/dynamicLoadPlusLoad.h"
 #include "../plugin/EarlyBirdAPC_InjetcLoad.h"
+#include "../plugin/fiberLoad.h"
+#include "../plugin/ntCreateSectionLoad.h"
+#include "../plugin/ntTestAlertLoad.h"
 
 using startFunction = void (*)(const unsigned char *, const size_t &);
 using startFunction2 = void (*)(const unsigned char *, const size_t &, const std::string &);
