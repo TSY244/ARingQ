@@ -7,7 +7,7 @@
 
 
 #include <iostream>
-
+#include <cstring>
 #include "File.h"
 
 namespace Parameter {
@@ -55,7 +55,7 @@ namespace Parameter {
 
         bool checkFunctionMode(std::string functionMode) {
             int mode = std::stoi(functionMode);
-            if (mode<=0 || mode>13) {
+            if (mode<=0 || mode>14) {
                 return false;
             }
             return true;

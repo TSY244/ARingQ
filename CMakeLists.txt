@@ -37,7 +37,11 @@ add_executable(ARingQ
         plugin/ntTestAlertLoad.h
         plugin/OEPHiijack_InjectLoad.h
         plugin/SEHExceptLoad.h
-        plugin/syscallLoad.h)
+        plugin/syscallLoad.h
+        plugin/threadHiijack_InjectLoad.h
+        plugin/TLSCallbackLoad.h
+
+)
 
 target_link_libraries(ARingQ ApcInjectLoad.dll
         CreateThreatPoolWaitLoad.dll
@@ -48,6 +52,7 @@ target_link_libraries(ARingQ ApcInjectLoad.dll
         OEPHiijack_InjectLoad.dll
         SEHExceptLoad.dll
         SyscallLoad.dll
+        ThreadHiijack_InjectLoad.dll
         NtTestAlertLoad.dll
         NtCreateSectionLoad.dll
         DirectlyLoad.dll)

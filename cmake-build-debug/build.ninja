@@ -115,7 +115,7 @@ build CMakeFiles/ARingQ.dir/src/Core.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Deb
 
 build D$:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/bin/ARingQ.exe: CXX_EXECUTABLE_LINKER__ARingQ_Debug CMakeFiles/ARingQ.dir/src/main.cpp.obj CMakeFiles/ARingQ.dir/src/utils.cpp.obj CMakeFiles/ARingQ.dir/src/Parameter.cpp.obj CMakeFiles/ARingQ.dir/src/Confusion.cpp.obj CMakeFiles/ARingQ.dir/src/Cryptography.cpp.obj CMakeFiles/ARingQ.dir/src/Launch.cpp.obj CMakeFiles/ARingQ.dir/src/File.cpp.obj CMakeFiles/ARingQ.dir/src/Core.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lApcInjectLoad  -lCreateThreatPoolWaitLoad  -lDynamicLoad  -lDynamicLoadPlus  -lFiberLoad  -lEarlyBirdAPC_InjetcLoad  -lOEPHiijack_InjectLoad  -lSEHExceptLoad  -lNtTestAlertLoad  -lNtCreateSectionLoad  -lDirectlyLoad  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lApcInjectLoad  -lCreateThreatPoolWaitLoad  -lDynamicLoad  -lDynamicLoadPlus  -lFiberLoad  -lEarlyBirdAPC_InjetcLoad  -lOEPHiijack_InjectLoad  -lSEHExceptLoad  -lSyscallLoad  -lThreadHiijack_InjectLoad  -lNtTestAlertLoad  -lNtCreateSectionLoad  -lDirectlyLoad  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/./lib
   OBJECT_DIR = CMakeFiles\ARingQ.dir
   POST_BUILD = cd .

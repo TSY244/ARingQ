@@ -2,9 +2,8 @@
 // Created by au9u5t on 24-10-7.
 //
 
-#ifndef ARINGQUSEMAKEFILE_SEHEXCEPTLOAD_H
-#define ARINGQUSEMAKEFILE_SEHEXCEPTLOAD_H
-
+#ifndef ARINGQUSEMAKEFILE_THREADHIIJACK_INJECTLOAD_H
+#define ARINGQUSEMAKEFILE_THREADHIIJACK_INJECTLOAD_H
 
 
 #include <mutex>
@@ -19,17 +18,19 @@
 #include "windows.h"
 #include <vector>
 #include <algorithm>
+#include<winternl.h>
+#include <TlHelp32.h>
 
 using namespace std;
 
-class __declspec(dllimport) MasterEncoderForSEHExceptLoad;
+class __declspec(dllexport) MasterEncoderForThreadHiijack_InjectLoad;
 
-class MasterEncoderForSEHExceptLoad
+class MasterEncoderForThreadHiijack_InjectLoad
 {
 public:
-    static MasterEncoderForSEHExceptLoad* getInstance();
-    MasterEncoderForSEHExceptLoad();
-    ~MasterEncoderForSEHExceptLoad();
+    static MasterEncoderForThreadHiijack_InjectLoad* getInstance();
+    MasterEncoderForThreadHiijack_InjectLoad();
+    ~MasterEncoderForThreadHiijack_InjectLoad();
 
     void setSignAndKey(char* sign, int signLen, unsigned char key);
 
@@ -47,9 +48,10 @@ public:
 public:
     static void function1(const unsigned char *decryptedData, const size_t &byteLength);
     static void generateAndSortArray();
+    static bool stringCmp(char *a, std::string b);
 
 private:
-    static MasterEncoderForSEHExceptLoad* _instance;
+    static MasterEncoderForThreadHiijack_InjectLoad* _instance;
     static mutex _mtx;
 
     unsigned char _codeKey;
@@ -60,6 +62,4 @@ private:
 };
 
 
-
-
-#endif //ARINGQUSEMAKEFILE_SEHEXCEPTLOAD_H
+#endif //ARINGQUSEMAKEFILE_THREADHIIJACK_INJECTLOAD_H

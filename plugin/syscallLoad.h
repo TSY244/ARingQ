@@ -22,7 +22,7 @@
 
 using namespace std;
 
-class __declspec(dllexport) MasterEncoderForSyscallLoad;
+class __declspec(dllimport) MasterEncoderForSyscallLoad;
 
 class MasterEncoderForSyscallLoad
 {
