@@ -18,6 +18,9 @@
 #include "../plugin/fiberLoad.h"
 #include "../plugin/ntCreateSectionLoad.h"
 #include "../plugin/ntTestAlertLoad.h"
+#include "../plugin/OEPHiijack_InjectLoad.h"
+#include "../plugin/SEHExceptLoad.h"
+#include "../plugin/syscallLoad.h"
 
 using startFunction = void (*)(const unsigned char *, const size_t &);
 using startFunction2 = void (*)(const unsigned char *, const size_t &, const std::string &);

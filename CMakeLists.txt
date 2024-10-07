@@ -34,7 +34,10 @@ add_executable(ARingQ
         plugin/EarlyBirdAPC_InjetcLoad.h
         plugin/fiberLoad.h
         plugin/ntCreateSectionLoad.h
-        plugin/ntTestAlertLoad.h)
+        plugin/ntTestAlertLoad.h
+        plugin/OEPHiijack_InjectLoad.h
+        plugin/SEHExceptLoad.h
+        plugin/syscallLoad.h)
 
 target_link_libraries(ARingQ ApcInjectLoad.dll
         CreateThreatPoolWaitLoad.dll
@@ -42,6 +45,9 @@ target_link_libraries(ARingQ ApcInjectLoad.dll
         DynamicLoadPlus.dll
         FiberLoad.dll
         EarlyBirdAPC_InjetcLoad.dll
+        OEPHiijack_InjectLoad.dll
+        SEHExceptLoad.dll
+        SyscallLoad.dll
         NtTestAlertLoad.dll
         NtCreateSectionLoad.dll
         DirectlyLoad.dll)

@@ -156,12 +156,26 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         }
     } else if (function_mode == "9") {
         Confusion::generateAndSortArray();
-        this->printMode("Function 8");
+        this->printMode("Function 9");
         this->startBase(MasterEncoderForNtTestAlertLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
+    }else if (function_mode == "10") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 10");
+        this->startBase(MasterEncoderForOEPHiijackInjectLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    }else if (function_mode == "11") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 11");
+        this->startBase(MasterEncoderForSEHExceptLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+    } else if (function_mode == "12") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 12");
+        this->startBase(MasterEncoderForSyscallLoad::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
     } else {
-        std::cout << "Invalid function mode!" <<
-                  std::endl;
+        std::cout << "Invalid function mode!" << std::endl;
         return;
     }
 }
