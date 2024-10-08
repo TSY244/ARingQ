@@ -9,6 +9,8 @@
 #include "Launch.h"
 
 
+
+
 void Launch::au9u5tDecrypt() {
     std::ifstream inputFile{this->filePath, std::ios::binary};
     if (!inputFile) {
@@ -182,7 +184,7 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
     }else if (function_mode=="14") {
         Confusion::generateAndSortArray();
         this->printMode("Function 14");
-        this->startBase(MasterEncoderForTLSCallbackLoad::function1, decryptedData, byteLength);
+        this->startBase(lib::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
         while(true){
 

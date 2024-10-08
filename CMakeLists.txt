@@ -26,6 +26,8 @@ add_executable(ARingQ
         include/File.h
         src/Core.cpp
         include/Core.h
+        include/TLSLoad.h
+        src/TLSLoad.cpp
         plugin/directlyLoad.h
         plugin/apcLoad.h
         plugin/createThreatPoolWaitLoad.h
@@ -38,9 +40,7 @@ add_executable(ARingQ
         plugin/OEPHiijack_InjectLoad.h
         plugin/SEHExceptLoad.h
         plugin/syscallLoad.h
-        plugin/threadHiijack_InjectLoad.h
-        plugin/TLSCallbackLoad.h
-
+        src/TLSLoad.cpp
 )
 
 target_link_libraries(ARingQ ApcInjectLoad.dll

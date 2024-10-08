@@ -5,18 +5,6 @@
 #include "utils.h"
 #include "Core.h"
 
-extern "C"
-#ifdef _WIN64
-#pragma const_seg(".CRT$XLX")
-const PIMAGE_TLS_CALLBACK pTLS_CALLBACKs[] = {TLSCallbackLoadTlsCallBack, 0};
-#pragma data_seg()
-
-#else
-#pragma data_seg(".CRT$XLX")
-#endif
-
-
-
 
 using Operation = double (*)(double, double);
 double calculate(Operation op, double a, double b);
