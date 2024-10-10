@@ -8,17 +8,26 @@
 
 void Parameter::printHelp() {
     std::cout << "Usage: tool [opt] " << std::endl;
-    std::cout << "for example: tool 1 [filepath] [EncryptionMethod] [Key] [function_mode]" << std::endl;
+    std::cout << "for example: tool 1 [filepath] [EncryptionMethod] [Key] [function_mode] [application_name]" << std::endl;
     std::cout << "             filepath: path to the file" << std::endl;
     std::cout << "             EncryptionMethod: 6N_XOR,file_XOR" << std::endl;
     std::cout << "                               6N_XOR: 6-digit number XOR Key" << std::endl;
     std::cout << "                               file_XOR: XOR Key from file" << std::endl;
     std::cout << "             Key: 6 characters XOR Key or path to the key file" << std::endl;
-    std::cout << "             function_mode: 1 means function1 to use directlyLoad" << std::endl;
-    std::cout << "                            2 means function2 to use apcLoad" << std::endl;
-    std::cout << "                            3 means function3 to use ThreatPoolWait" << std::endl;
-    std::cout << "                            4 means function4 to use dynamicLoad" << std::endl;
-    std::cout << "                            5 means function5 to use dynamicLoadPlus" << std::endl;
+    std::cout << "             function_mode: 1 means to use directlyLoad" << std::endl;
+    std::cout << "                            2 means to use apcLoad" << std::endl;
+    std::cout << "                            3 means to use ThreatPoolWait" << std::endl;
+    std::cout << "                            4 means to use dynamicLoad" << std::endl;
+    std::cout << "                            5 means to use dynamicLoadPlus" << std::endl;
+    std::cout <<"                             6 means to use EarlyBirdAPC_InjetcLoad" << std::endl;
+    std::cout <<"                             7 means  to use fiberLoad" << std::endl;
+    std::cout <<"                             8 means  to use ntCreateSectionLoad" << std::endl;
+    std::cout <<"                             9 means  to use ntTestAlertLoad" << std::endl;
+    std::cout <<"                             10 means to use OEPHiijack_InjectLoad" << std::endl;
+    std::cout <<"                             11 means to use SEHExceptLoad" << std::endl;
+    std::cout <<"                             12 means to use syscallLoad" << std::endl;
+    std::cout <<"                             13 means to use threadHiijack_InjectLoad" << std::endl;
+    std::cout <<"                             14 means to use TLSLoad" << std::endl;
 
 }
 

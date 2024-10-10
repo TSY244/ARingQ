@@ -97,7 +97,7 @@ namespace Parameter {
 
                 std::string functionMode = argv[5];
                 if (!checkFunctionMode(functionMode)) {
-                    std::cout << "Invalid function mode!" << std::endl;
+                    std::cout << "Invalid func mode!" << std::endl;
 
                     return false;
                 }

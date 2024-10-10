@@ -7,7 +7,10 @@
 
 #include <string>
 #include <utility>
-#include <Cryptography.h>
+
+#include "Cryptography.h"
+#include "loadLibrary.h"
+
 #include "TLSLoad.h"
 
 
@@ -30,6 +33,8 @@ using startFunction = void (*)(const unsigned char *, const size_t &);
 using startFunction2 = void (*)(const unsigned char *, const size_t &, const std::string &);
 using generateFunction = void (*)();
 
+using dllAndFunction = std::pair<std::string, std::string>;
+
 class Launch {
 private:
     int lessThan{0};
@@ -51,6 +56,9 @@ private:
     void funcFile_XOR(std::string &encryptedData);
 
     void launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength);
+    void launchFunctionV2(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength);
+    dllAndFunction getDllNameAndFuncName(const std::string &function_mode);
+    std::string strXor(const std::string &data);
 
     void printMode(const std::string &mode);
 

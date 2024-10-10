@@ -41,6 +41,8 @@ add_executable(ARingQ
         plugin/SEHExceptLoad.h
         plugin/syscallLoad.h
         src/TLSLoad.cpp
+        src/LoadLibrary.cpp
+        include/LoadLibrary.h
 )
 
 target_link_libraries(ARingQ ApcInjectLoad.dll
