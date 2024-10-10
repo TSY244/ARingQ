@@ -186,8 +186,10 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
         this->printMode("Function 14");
         this->startBase(lib::function1, decryptedData, byteLength);
         Confusion::generateAndSortArray();
+        std::cout<<"Function 14 out"<<std::endl;
         while(true){
-
+            Sleep(10000);
+            std::cout<<"Function 14 in while_true"<<std::endl;
         }
     } else {
         std::cout << "Invalid function mode!" << std::endl;
