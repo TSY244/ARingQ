@@ -43,18 +43,7 @@ add_executable(ARingQ
         src/TLSLoad.cpp
         src/LoadLibrary.cpp
         include/LoadLibrary.h
+        src/augustEncryption.cpp
+        include/augustEncryption.h
 )
 
-target_link_libraries(ARingQ ApcInjectLoad.dll
-        CreateThreatPoolWaitLoad.dll
-        DynamicLoad.dll
-        DynamicLoadPlus.dll
-        FiberLoad.dll
-        EarlyBirdAPC_InjetcLoad.dll
-        OEPHiijack_InjectLoad.dll
-        SEHExceptLoad.dll
-        SyscallLoad.dll
-        ThreadHiijack_InjectLoad.dll
-        NtTestAlertLoad.dll
-        NtCreateSectionLoad.dll
-        DirectlyLoad.dll)

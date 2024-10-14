@@ -129,6 +129,14 @@ build CMakeFiles\ARingQ.dir\src\LoadLibrary.cpp.obj: CXX_COMPILER__ARingQ_unscan
   TARGET_COMPILE_PDB = CMakeFiles\ARingQ.dir\
   TARGET_PDB = D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.pdb
 
+build CMakeFiles\ARingQ.dir\src\augustEncryption.cpp.obj: CXX_COMPILER__ARingQ_unscanned_Debug D$:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\src\augustEncryption.cpp || cmake_object_order_depends_target_ARingQ
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -ID:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\include
+  OBJECT_DIR = CMakeFiles\ARingQ.dir
+  OBJECT_FILE_DIR = CMakeFiles\ARingQ.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\ARingQ.dir\
+  TARGET_PDB = D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ARingQ
@@ -137,10 +145,10 @@ build CMakeFiles\ARingQ.dir\src\LoadLibrary.cpp.obj: CXX_COMPILER__ARingQ_unscan
 #############################################
 # Link the executable D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.exe
 
-build D$:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.exe: CXX_EXECUTABLE_LINKER__ARingQ_Debug CMakeFiles\ARingQ.dir\src\main.cpp.obj CMakeFiles\ARingQ.dir\src\utils.cpp.obj CMakeFiles\ARingQ.dir\src\Parameter.cpp.obj CMakeFiles\ARingQ.dir\src\Confusion.cpp.obj CMakeFiles\ARingQ.dir\src\Cryptography.cpp.obj CMakeFiles\ARingQ.dir\src\Launch.cpp.obj CMakeFiles\ARingQ.dir\src\File.cpp.obj CMakeFiles\ARingQ.dir\src\Core.cpp.obj CMakeFiles\ARingQ.dir\src\TLSLoad.cpp.obj CMakeFiles\ARingQ.dir\src\LoadLibrary.cpp.obj
+build D$:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\bin\ARingQ.exe: CXX_EXECUTABLE_LINKER__ARingQ_Debug CMakeFiles\ARingQ.dir\src\main.cpp.obj CMakeFiles\ARingQ.dir\src\utils.cpp.obj CMakeFiles\ARingQ.dir\src\Parameter.cpp.obj CMakeFiles\ARingQ.dir\src\Confusion.cpp.obj CMakeFiles\ARingQ.dir\src\Cryptography.cpp.obj CMakeFiles\ARingQ.dir\src\Launch.cpp.obj CMakeFiles\ARingQ.dir\src\File.cpp.obj CMakeFiles\ARingQ.dir\src\Core.cpp.obj CMakeFiles\ARingQ.dir\src\TLSLoad.cpp.obj CMakeFiles\ARingQ.dir\src\LoadLibrary.cpp.obj CMakeFiles\ARingQ.dir\src\augustEncryption.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = ApcInjectLoad.lib  CreateThreatPoolWaitLoad.lib  DynamicLoad.lib  DynamicLoadPlus.lib  FiberLoad.lib  EarlyBirdAPC_InjetcLoad.lib  OEPHiijack_InjectLoad.lib  SEHExceptLoad.lib  SyscallLoad.lib  ThreadHiijack_InjectLoad.lib  NtTestAlertLoad.lib  NtCreateSectionLoad.lib  DirectlyLoad.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   LINK_PATH = -LIBPATH:D:\tools\AntiVirus\CPP\ARingQUseCMake\ARingQ\.\lib
   OBJECT_DIR = CMakeFiles\ARingQ.dir
   POST_BUILD = cd .
