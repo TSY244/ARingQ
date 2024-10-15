@@ -28,15 +28,24 @@ void Parameter::printHelp() {
     std::cout <<"                             12 means to use syscallLoad" << std::endl;
     std::cout <<"                             13 means to use threadHiijack_InjectLoad" << std::endl;
     std::cout <<"                             14 means to use TLSLoad" << std::endl;
+    std::cout << "              tool   [parameters_of_the_application]" << std::endl;
+    std::cout << "                     Write the parameters of this program in parameter.txt," << std::endl;
+    std::cout << "                     please keep the parameter format of the corresponding function." << std::endl;
 
 }
 
 bool Parameter::checkParameters(int argc, char **argv) {
     parameter p{};
-    if (!p.isHasParameter(argc)) {
-        return false;
+//    if (!p.isHasParameter(argc)) {
+//        return false;
+//    }
+    if (argc == 1){
+        return true; // Possibly load the shellcode of pe file
     }
     switch (p.getOperation(argv[1])) {
+        case 0:{
+            return true; // for load application
+        }
         case 1: {
             return p.checkOpt1(argc, argv);
         }

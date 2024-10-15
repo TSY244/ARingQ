@@ -41,6 +41,11 @@ private:
     void defaultOption(int argc, char *argv[]);
 
     bool analyzeOpt1Parameters(int argc, char *argv[]);
+    bool analyzeOpt2Parameters(int argc,std::vector<std::string> &argv);
+
+    void launchFunction();
+
+    void loadApplication();
 
 public:
     explicit Core(int mode) : mode(mode) {
@@ -51,6 +56,8 @@ public:
     ~Core() = default;
 
 public:
+
+    void getParameterFromFile(int argc, std::vector<std::string> &argv);
 
     void setMode(int m);
 
