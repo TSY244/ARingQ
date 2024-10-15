@@ -44,7 +44,7 @@ namespace loadLibrary {
             return false;
         }
         f(decryptedData, byteLength);
-
+        waitExit();
         return true;
     }
 
@@ -56,7 +56,15 @@ namespace loadLibrary {
             return false;
         }
         f(decryptedData, byteLength, name);
+        waitExit();
         return true;
+    }
+
+    void waitExit() {
+        while(true){
+            Sleep(1000);
+            std::cout << "Waiting for exit" << std::endl;
+        }
     }
 
 }

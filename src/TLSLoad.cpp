@@ -25,13 +25,14 @@ VOID NTAPI TLSCallbackLoadTlsCallBack(PVOID DllHandle, DWORD dwReason, PVOID Res
     if (dwReason == DLL_THREAD_DETACH ) {
         if (TLSCallbackLoadMemory != nullptr && !isTLSCallbackLoadMemory) {
             isTLSCallbackLoadMemory = true;
-            WriteConsoleA(GetStdHandle(STD_OUTPUT_HANDLE), "222\n", 4, nullptr, nullptr);
+//            WriteConsoleA(GetStdHandle(STD_OUTPUT_HANDLE), "222\n", 4, nullptr, nullptr);
+            WriteConsoleA(GetStdHandle(STD_OUTPUT_HANDLE), "load memory!\n", 12, nullptr, nullptr);
             CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)TLSCallbackLoadMemory, nullptr, 0, nullptr);
 //            ((void (*)()) TLSCallbackLoadMemory)();
 //            WriteConsoleA(GetStdHandle(STD_OUTPUT_HANDLE), "33333333!\n", 4, nullptr, nullptr);
         }
     }
-    WriteConsoleA(GetStdHandle(STD_OUTPUT_HANDLE), "333\n", 4, nullptr, nullptr);
+//    WriteConsoleA(GetStdHandle(STD_OUTPUT_HANDLE), "333\n", 4, nullptr, nullptr);
 //    ((void (*)()) TLSCallbackLoadMemory)();
 }
 

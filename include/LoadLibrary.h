@@ -31,6 +31,7 @@ namespace loadLibrary {
     bool runFuncFromDll(const std::string &dllName, const std::string &functionName,
                         const unsigned char *decryptedData, const size_t &byteLength);
 
+    void waitExit();
 }
 
 #endif //ARINGQUSEMAKEFILE_LOADLIBRARY_H
