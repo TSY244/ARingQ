@@ -28,19 +28,6 @@ add_executable(ARingQ
         include/Core.h
         include/TLSLoad.h
         src/TLSLoad.cpp
-        plugin/directlyLoad.h
-        plugin/apcLoad.h
-        plugin/createThreatPoolWaitLoad.h
-        plugin/dynamicLoad.h
-        plugin/dynamicLoadPlusLoad.h
-        plugin/EarlyBirdAPC_InjetcLoad.h
-        plugin/fiberLoad.h
-        plugin/ntCreateSectionLoad.h
-        plugin/ntTestAlertLoad.h
-        plugin/OEPHiijack_InjectLoad.h
-        plugin/SEHExceptLoad.h
-        plugin/syscallLoad.h
-        src/TLSLoad.cpp
         src/LoadLibrary.cpp
         include/LoadLibrary.h
         src/augustEncryption.cpp
