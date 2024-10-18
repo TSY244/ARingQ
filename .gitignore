@@ -1,0 +1,9 @@
+cmake-build-debug/
+cmake-build-vsdebug/
+cmake-build-vsdebug64/
+bin/
+build/
+lib/*.exe
+lib/*.txt
+tools/
+.idea/
