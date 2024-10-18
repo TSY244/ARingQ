@@ -57,6 +57,8 @@ public:
 
 public:
 
+
+
     void getParameterFromFile(int argc, std::vector<std::string> &argv);
 
     void setMode(int m);

@@ -15,8 +15,16 @@ namespace Parameter {
 
     bool checkParameters(int argc, char *argv[]);
 
+    bool isPrintHelp(int argc, char *argv[]) {
+        if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-help") == 0 || strcmp(argv[1], "help") == 0) {
+            return true;
+        }
+        return false;
+    };
+
     class parameter {
     public:
+
         bool checkParameterNumber(int argc, int number) {
             if (argc == number) {
                 return true;
