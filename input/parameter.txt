@@ -1,1 +1,0 @@
- 1 D:\code\clion\C++\ARingQv1\input\mi2.txt  6N_XOR   244959 1
