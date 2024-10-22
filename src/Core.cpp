@@ -152,15 +152,15 @@ void Core::defaultOption(int argc, char **argv) {
     }
 }
 
-void
-Core::initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) {
-    this->launch = new Launch(filePath, method, key, function_mode);
-    this->launch->setCycles(cycles);
-}
-
-Core::Core(string &filePath, string &method, string &key, string &function_mode, int cycles) {
-    this->initLaunch(filePath, method, key, function_mode, cycles);
-}
+//void
+//Core::initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) {
+//    this->launch = new Launch(filePath, method, key, function_mode);
+//    this->launch->setCycles(cycles);
+//}
+//
+//Core::Core(string &filePath, string &method, string &key, string &function_mode, int cycles) {
+//    this->initLaunch(filePath, method, key, function_mode, cycles);
+//}
 
 bool Core::analyzeOpt1Parameters(int argc, char **argv) {
     this->filePath = argv[2];

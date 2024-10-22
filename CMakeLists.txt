@@ -20,17 +20,11 @@ add_executable(ARingQ
         src/Confusion.cpp
         src/Cryptography.cpp
         include/Cryptography.h
-        src/Launch.cpp
-        include/Launch.h
         src/File.cpp
         include/File.h
         src/Core.cpp
         include/Core.h
-        include/TLSLoad.h
-        src/TLSLoad.cpp
         src/LoadLibrary.cpp
         include/LoadLibrary.h
-        src/augustEncryption.cpp
-        include/augustEncryption.h
 )
 

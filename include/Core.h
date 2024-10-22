@@ -6,9 +6,10 @@
 #define ARINGQUSEMAKEFILE_CORE_H
 
 #include <iostream>
-#include "Cryptography.h"
+#include <vector>
 #include "Parameter.h"
-#include "Launch.h"
+#include "LoadLibrary.h"
+
 
 class Core {
 private:
@@ -20,7 +21,7 @@ private:
     std::string key{};
     std::string functionMode{};
 
-    Launch *launch{nullptr};
+//    Launch *launch{nullptr};
 private:
     void mode0Function();
 
@@ -67,7 +68,7 @@ public:
 
     int start(int argc, char *argv[]);
 
-    void initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) ;
+//    void initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) ;
 };
 
 
