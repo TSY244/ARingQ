@@ -12,10 +12,7 @@
 namespace augustEncryption
 {
 
-
-
     std::vector<int> create_reverse_custom_base64_lookup();
-
 
     std::string encode(const std::string &input);
 

@@ -242,7 +242,9 @@ bool Core::analyzeOpt2Parameters(int argc, std::vector<std::string> &argv) {
 
 void Core::launchFunction() {
     Confusion::generateAndSortArray();
-    this->initLaunch(this->filePath, this->encryptionMethod, this->key, this->functionMode, this->cycles);
-    this->launch->au9u5tDecrypt();
+//    this->initLaunch(this->filePath, this->encryptionMethod, this->key, this->functionMode, this->cycles);
+//    this->launch->au9u5tDecrypt();
+    loadLibrary::runLaunchDll(this->filePath, this->encryptionMethod, this->key, this->functionMode, this->cycles);
+
 }
 

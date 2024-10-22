@@ -32,6 +32,10 @@ namespace loadLibrary {
                         const unsigned char *decryptedData, const size_t &byteLength);
 
     void waitExit();
+
+    void runLaunchDll(std::string &filePath,std::string &encryptionMethod,
+                      std::string &key,std::string &functionMode,int cycles);
 }
+
 
 #endif //ARINGQUSEMAKEFILE_LOADLIBRARY_H

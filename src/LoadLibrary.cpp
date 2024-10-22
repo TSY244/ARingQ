@@ -67,4 +67,22 @@ namespace loadLibrary {
         }
     }
 
+    void runLaunchDll(std::string &filePath,std::string &encryptionMethod,
+                      std::string &key,std::string &functionMode,int cycles){
+        std::string launchDll = "Launch.dll";
+        std::string launchFunction = "hello";
+        using lauchFunc = void (*)(std::string &,std::string &,std::string &,std::string &,int);
+        HMODULE hModule = LoadLibrary(launchDll.c_str());
+        if (hModule == nullptr) {
+            std::cout << "LoadLibrary failed with error " << GetLastError() << std::endl;
+            return;
+        }
+        auto f = (lauchFunc) GetProcAddress(hModule, launchFunction.c_str());
+        if (f == nullptr) {
+            std::cout << "GetProcAddress failed with error " << GetLastError() << std::endl;
+            return;
+        }
+        f(filePath,encryptionMethod,key,functionMode,cycles);
+    }
+
 }
