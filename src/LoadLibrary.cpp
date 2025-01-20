@@ -69,10 +69,12 @@ namespace loadLibrary {
 
     void runLaunchDll(std::string &filePath,std::string &encryptionMethod,
                       std::string &key,std::string &functionMode,int cycles){
+        std::string baseDll="../lib/";
         std::string launchDll = "Launch.dll";
         std::string launchFunction = "hello";
+        auto targetDll = baseDll + launchDll;
         using lauchFunc = void (*)(std::string &,std::string &,std::string &,std::string &,int);
-        HMODULE hModule = LoadLibrary(launchDll.c_str());
+        HMODULE hModule = LoadLibrary(targetDll.c_str());
         if (hModule == nullptr) {
             std::cout << "LoadLibrary failed with error " << GetLastError() << std::endl;
             return;
