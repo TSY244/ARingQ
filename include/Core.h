@@ -6,9 +6,10 @@
 #define ARINGQUSEMAKEFILE_CORE_H
 
 #include <iostream>
-#include "Cryptography.h"
+#include <vector>
 #include "Parameter.h"
-#include "Launch.h"
+#include "LoadLibrary.h"
+
 
 class Core {
 private:
@@ -20,7 +21,7 @@ private:
     std::string key{};
     std::string functionMode{};
 
-    Launch *launch{nullptr};
+//    Launch *launch{nullptr};
 private:
     void mode0Function();
 
@@ -32,7 +33,7 @@ private:
 
     void mode4Function(int argc, char *argv[]);
 
-    bool checkParameter(int argc, char *argv[]);
+    int checkParameter(int argc, char *argv[]);
 
     int getOperation(char *argv[]);
 
@@ -41,6 +42,11 @@ private:
     void defaultOption(int argc, char *argv[]);
 
     bool analyzeOpt1Parameters(int argc, char *argv[]);
+    bool analyzeOpt2Parameters(int argc,std::vector<std::string> &argv);
+
+    void launchFunction();
+
+    void loadApplication();
 
 public:
     explicit Core(int mode) : mode(mode) {
@@ -52,13 +58,17 @@ public:
 
 public:
 
+
+
+    void getParameterFromFile(int argc, std::vector<std::string> &argv);
+
     void setMode(int m);
 
     int getMode();
 
     int start(int argc, char *argv[]);
 
-    void initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) ;
+//    void initLaunch(std::string &filePath, std::string &method, std::string &key, std::string &function_mode, int cycles) ;
 };
 
 

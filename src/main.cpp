@@ -5,6 +5,7 @@
 #include "utils.h"
 #include "Core.h"
 
+
 using Operation = double (*)(double, double);
 double calculate(Operation op, double a, double b);
 

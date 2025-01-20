@@ -7,16 +7,22 @@
 
 
 #include <iostream>
-
+#include <cstring>
 #include "File.h"
 
 namespace Parameter {
+    const int LoadSHC = 1;
+    const int LoadApplication = 2;
+
     void printHelp();
 
-    bool checkParameters(int argc, char *argv[]);
+    int checkParameters(int argc, char *argv[]);
+
+    bool isPrintHelp(int argc, char *argv[]);
 
     class parameter {
     public:
+
         bool checkParameterNumber(int argc, int number) {
             if (argc == number) {
                 return true;
@@ -55,20 +61,8 @@ namespace Parameter {
 
         bool checkFunctionMode(std::string functionMode) {
             int mode = std::stoi(functionMode);
-            switch (mode) {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                case 8:
-                case 9:
-                    break;
-                default:
-                    return false;
-
+            if (mode<=0 || mode>14) {
+                return false;
             }
             return true;
         };
@@ -109,7 +103,7 @@ namespace Parameter {
 
                 std::string functionMode = argv[5];
                 if (!checkFunctionMode(functionMode)) {
-                    std::cout << "Invalid function mode!" << std::endl;
+                    std::cout << "Invalid func mode!" << std::endl;
 
                     return false;
                 }

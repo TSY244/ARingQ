@@ -1,3 +1,0 @@
-D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/cmake-build-debug/CMakeFiles/ARingQ.dir
-D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/tools/AntiVirus/CPP/ARingQUseCMake/ARingQ/cmake-build-debug/CMakeFiles/rebuild_cache.dir

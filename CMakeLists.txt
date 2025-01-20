@@ -20,28 +20,11 @@ add_executable(ARingQ
         src/Confusion.cpp
         src/Cryptography.cpp
         include/Cryptography.h
-        src/Launch.cpp
-        include/Launch.h
         src/File.cpp
         include/File.h
         src/Core.cpp
         include/Core.h
-        plugin/directlyLoad.h
-        plugin/apcLoad.h
-        plugin/createThreatPoolWaitLoad.h
-        plugin/dynamicLoad.h
-        plugin/dynamicLoadPlusLoad.h
-        plugin/EarlyBirdAPC_InjetcLoad.h
-        plugin/fiberLoad.h
-        plugin/ntCreateSectionLoad.h
-        plugin/ntTestAlertLoad.h)
+        src/LoadLibrary.cpp
+        include/LoadLibrary.h
+)
 
-target_link_libraries(ARingQ ApcInjectLoad.dll
-        CreateThreatPoolWaitLoad.dll
-        DynamicLoad.dll
-        DynamicLoadPlus.dll
-        FiberLoad.dll
-        EarlyBirdAPC_InjetcLoad.dll
-        NtTestAlertLoad.dll
-        NtCreateSectionLoad.dll
-        DirectlyLoad.dll)
