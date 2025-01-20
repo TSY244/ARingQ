@@ -33,7 +33,7 @@ private:
 
     void mode4Function(int argc, char *argv[]);
 
-    bool checkParameter(int argc, char *argv[]);
+    int checkParameter(int argc, char *argv[]);
 
     int getOperation(char *argv[]);
 

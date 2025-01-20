@@ -4,7 +4,11 @@
 
 #include <cstring>
 #include "Parameter.h"
+
+
+
 namespace Parameter {
+
     bool isPrintHelp(int argc, char **argv) {
         if (argc == 2) {
             if (strcmp(argv[1], "-h") == 0 ||
@@ -47,23 +51,26 @@ namespace Parameter {
 
     }
 
-    bool Parameter::checkParameters(int argc, char **argv) {
+    int Parameter::checkParameters(int argc, char **argv) {
         parameter p{};
 //    if (!p.isHasParameter(argc)) {
 //        return false;
 //    }
         if (argc == 1) {
-            return true; // Possibly load the shellcode of pe file
+            return LoadApplication; // Possibly load the shellcode of pe file
         }
         switch (p.getOperation(argv[1])) {
             case 0: {
-                return true; // for load application
+                return LoadApplication; // for load application
             }
             case 1: {
-                return p.checkOpt1(argc, argv);
+                if (p.checkOpt1(argc, argv)) {
+                    return LoadSHC; // for load shellcode
+                }
+                return LoadApplication;
             }
             default: {
-                return false;
+                return LoadApplication;// Illegal parameters refer to the parameters passed during file loading
             }
 
         }

@@ -73,36 +73,41 @@ void Core::mode2Function() {
 
 void Core::mode4Function(int argc, char **argv) {
     Confusion::generateAndSortArray();
-    if (!checkParameter(argc, argv)) {
-        Parameter::printHelp();
-        return;
-    }
+    auto selectedMode = this->checkParameter(argc, argv);
+//    if (!checkParameter(argc, argv)) {
+//        Parameter::printHelp();
+//        return;
+//    }
     if (Parameter::isPrintHelp(argc, argv)) {
         Parameter::printHelp();
         return;
     }
 
-    if (1 == argc) {
-        this->loadApplication();
-    }
-
     Confusion::generateAndSortArray();
-    switch (this->getOperation(argv)) {
-        case 1: { // used to load application
-            this->option1(argc, argv);
-        }
-        default: {
-            this->loadApplication();
-            break;
-        }
+//    switch (selectedMode) {
+//        case Parameter::LoadSHC: { // used to load application
+//            this->option1(argc, argv);
+//            break;
+//        }
+//        default: {
+//            this->loadApplication();
+//            break;
+//        }
+//    }
+    if (selectedMode == Parameter::LoadSHC) {
+        this->option1(argc, argv);
+    } else {
+        this->loadApplication();
     }
 }
 
-bool Core::checkParameter(int argc, char **argv) {
-    if (!Parameter::checkParameters(argc, argv)) {
-        return false;
-    }
-    return true;
+int Core::checkParameter(int argc, char **argv) {
+
+//    if (!Parameter::checkParameters(argc, argv)) {
+//        return false;
+//    }
+//    return true;
+    return  Parameter::checkParameters(argc, argv);
 }
 
 int Core::getOperation(char *argv[]) {

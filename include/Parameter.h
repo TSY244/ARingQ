@@ -11,9 +11,12 @@
 #include "File.h"
 
 namespace Parameter {
+    const int LoadSHC = 1;
+    const int LoadApplication = 2;
+
     void printHelp();
 
-    bool checkParameters(int argc, char *argv[]);
+    int checkParameters(int argc, char *argv[]);
 
     bool isPrintHelp(int argc, char *argv[]);
 
